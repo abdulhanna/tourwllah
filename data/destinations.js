@@ -9,8 +9,8 @@ export const DESTINATIONS = [
     heroHeading: 'Kashmir — Paradise on Earth',
     heroSubheading: 'Houseboat stays · Gondola rides · Snow-capped peaks',
     heroGradient: 'from-teal-900 via-teal-800 to-slate-900',
-    heroImage: 'https://images.unsplash.com/photo-1583417319070-4a69db38a482?w=1600&q=85&auto=format&fit=crop',
-    cardImage: 'https://images.unsplash.com/photo-1566836610593-62a64888a216?w=800&q=80&auto=format&fit=crop',
+    heroImage: 'https://images.moneycontrol.com/static-mcnews/2024/08/20240816075751_Jammu-and-Kashmir-Election-2024.jpg?impolicy=website&width=1600&height=700',
+    cardImage: 'https://images.moneycontrol.com/static-mcnews/2024/08/20240816075751_Jammu-and-Kashmir-Election-2024.jpg?impolicy=website&width=1600&height=900',
     ctaLabel: 'Book Kashmir Tour on WhatsApp',
     highlights: [
       { icon: '🛶', label: 'Dal Lake Shikara Ride' },
@@ -44,8 +44,8 @@ export const DESTINATIONS = [
     heroHeading: 'Manali — Where Adventure Meets Serenity',
     heroSubheading: 'Snow peaks · Adventure sports · Cedar forests',
     heroGradient: 'from-blue-900 via-blue-800 to-slate-900',
-    heroImage: 'https://images.unsplash.com/photo-1626621341517-bbf3d9990a23?w=1600&q=85&auto=format&fit=crop',
-    cardImage: 'https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800&q=80&auto=format&fit=crop',
+    heroImage: 'https://s7ap1.scene7.com/is/image/incredibleindia/solang-nullah-manali-himachal-pradesh-1-attr-hero?qlt=82&ts=1726730690372',
+    cardImage: 'https://s7ap1.scene7.com/is/image/incredibleindia/solang-nullah-manali-himachal-pradesh-1-attr-hero?qlt=82&ts=1726730690372',
     ctaLabel: 'Book Manali Tour on WhatsApp',
     highlights: [
       { icon: '🏔', label: 'Rohtang Pass Snow' },
@@ -79,8 +79,8 @@ export const DESTINATIONS = [
     heroHeading: 'Rajasthan — The Land of Kings',
     heroSubheading: 'Majestic forts · Lake palaces · Desert sunsets',
     heroGradient: 'from-orange-900 via-red-800 to-slate-900',
-    heroImage: 'https://images.unsplash.com/photo-1524492412937-b28074a5d7da?w=1600&q=85&auto=format&fit=crop',
-    cardImage: 'https://images.unsplash.com/photo-1524492412937-b28074a5d7da?w=800&q=80&auto=format&fit=crop',
+    heroImage: 'https://static.toiimg.com/photo/msid-115886096,width-96,height-65.cms',
+    cardImage: 'https://static.toiimg.com/photo/msid-115886096,width-96,height-65.cms',
     ctaLabel: 'Book Rajasthan Tour on WhatsApp',
     highlights: [
       { icon: '🏰', label: 'Amber Fort Jaipur' },

@@ -11,8 +11,8 @@ export const BLOGS = [
     dateModified: '2025-06-01',
     author: 'Himalayan Holidays',
     heroGradient: 'from-teal-800 to-slate-900',
-    heroImage: 'https://images.unsplash.com/photo-1583417319070-4a69db38a482?w=1600&q=85&auto=format&fit=crop',
-    cardImage: 'https://images.unsplash.com/photo-1566836610593-62a64888a216?w=800&q=80&auto=format&fit=crop',
+    heroImage: 'https://images.moneycontrol.com/static-mcnews/2024/08/20240816075751_Jammu-and-Kashmir-Election-2024.jpg?impolicy=website&width=1600&height=900',
+    cardImage: 'https://images.moneycontrol.com/static-mcnews/2024/08/20240816075751_Jammu-and-Kashmir-Election-2024.jpg?impolicy=website&width=1600&height=800',
     excerpt:
       'Kashmir, the crown jewel of India, offers breathtaking landscapes, serene lakes, and snow-capped peaks. Discover the top places to include in your Kashmir itinerary.',
     content: {
@@ -22,7 +22,7 @@ export const BLOGS = [
         {
           id: 'srinagar',
           h2: 'Srinagar — The Heart of Kashmir',
-          image: 'https://images.unsplash.com/photo-1566836610593-62a64888a216?w=900&q=80&auto=format&fit=crop',
+          image: 'https://www.hillsandwills.com/blog_images/87101.jpg',
           imageAlt: 'Shikaras on Dal Lake, Srinagar with houseboats in the background',
           description:
             'Srinagar, the summer capital of Jammu & Kashmir, is the gateway to the Kashmir Valley. The city is famous for its iconic Dal Lake, where traditional houseboats (shikaras) float serenely on the water. The Mughal Gardens — Shalimar Bagh, Nishat Bagh, and Chashme Shahi — are masterpieces of garden design laid out centuries ago by Mughal emperors.',
@@ -33,7 +33,7 @@ export const BLOGS = [
         {
           id: 'gulmarg',
           h2: 'Gulmarg — The Meadow of Flowers',
-          image: 'https://images.unsplash.com/photo-1548013146-72479768bada?w=900&q=80&auto=format&fit=crop',
+          image: 'https://www.thestatesman.com/wp-content/uploads/2022/10/gulmarg.jpg',
           imageAlt: 'Snow-covered Gulmarg meadows with Himalayan peaks in the background',
           description:
             'Located at an altitude of 2,650 metres, Gulmarg is a world-class ski resort in winter and a breathtaking meadow in summer. The Gulmarg Gondola — one of the highest cable cars in the world — carries visitors up to Kongdori and Apharwat Peak, offering panoramic views of the Himalayas including the famous Nanga Parbat.',
@@ -44,7 +44,7 @@ export const BLOGS = [
         {
           id: 'pahalgam',
           h2: 'Pahalgam — The Valley of Shepherds',
-          image: 'https://images.unsplash.com/photo-1544198870-9e2d77a69f4c?w=900&q=80&auto=format&fit=crop',
+          image: 'https://s7ap1.scene7.com/is/image/incredibleindia/3-amarnath-yatra-pahalgam-jammu-and-kashmir-city-hero-new?qlt=82&ts=1726728787453',
           imageAlt: 'Lush green valley of Pahalgam with pine forests and river',
           description:
             'Pahalgam sits at the confluence of the Lidder River and is a paradise for nature lovers and trekkers. It serves as the base camp for the annual Amarnath Yatra pilgrimage. The surrounding valleys of Betaab (named after the Bollywood film), Aru, and Chandanwari offer stunning scenery with dense pine forests, alpine meadows, and crystal-clear streams.',
@@ -55,7 +55,7 @@ export const BLOGS = [
         {
           id: 'sonmarg',
           h2: 'Sonmarg — The Meadow of Gold',
-          image: 'https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=900&q=80&auto=format&fit=crop',
+          image: 'https://www.exploreourindia.com/backend/web/images/post/big/6674_Sonamarg%20Tourism%20Jammu%20and%20Kashmir.webp',
           imageAlt: 'Sonmarg glacier with snow-capped Himalayan peaks',
           description:
             'Sonmarg, meaning "Meadow of Gold", gets its name from the golden hue of the meadows in summer. Located at 2,800 metres, it is the last major town before the Zoji La pass leading to Leh. The Thajiwas Glacier, accessible by pony or on foot, is the highlight — where snow remains year-round. Sonmarg is also the starting point for treks to alpine lakes like Vishansar and Krishansar.',
@@ -86,8 +86,8 @@ export const BLOGS = [
     dateModified: '2025-06-01',
     author: 'Himalayan Holidays',
     heroGradient: 'from-blue-900 to-slate-800',
-    heroImage: 'https://images.unsplash.com/photo-1626621341517-bbf3d9990a23?w=1600&q=85&auto=format&fit=crop',
-    cardImage: 'https://images.unsplash.com/photo-1626621341517-bbf3d9990a23?w=800&q=80&auto=format&fit=crop',
+    heroImage: 'https://s7ap1.scene7.com/is/image/incredibleindia/solang-nullah-manali-himachal-pradesh-1-attr-hero?qlt=82&ts=1726730690372',
+    cardImage: 'https://s7ap1.scene7.com/is/image/incredibleindia/solang-nullah-manali-himachal-pradesh-1-attr-hero?qlt=82&ts=1726730690372',
     excerpt:
       'Manali is the adventure capital of Himachal Pradesh. Whether you are into skiing, trekking, river rafting or simply soaking in Himalayan views — Manali has something for everyone.',
     content: {
@@ -97,7 +97,7 @@ export const BLOGS = [
         {
           id: 'rohtang',
           h2: 'Rohtang Pass — Gateway to the High Himalayas',
-          image: 'https://images.unsplash.com/photo-1559128010-7c1ad6e1b6a5?w=900&q=80&auto=format&fit=crop',
+          image: 'https://discoverkullumanali.in/wp-content/uploads/2019/10/Tourists-enjoy-snow-at-Rohtang-pass-6.jpg',
           imageAlt: 'Snow-covered Rohtang Pass with dramatic Himalayan mountain scenery',
           description:
             'Rohtang Pass at 3,978 metres is one of the most accessible high-altitude passes in India, connecting the Kullu Valley with the Lahaul and Spiti valleys. Even in summer, the pass is covered in snow, making it a favourite for snow activities. The drive up offers stunning views of glaciers, alpine meadows, and dramatic mountain landscapes.',
@@ -108,7 +108,7 @@ export const BLOGS = [
         {
           id: 'solang',
           h2: 'Solang Valley — Manali\'s Adventure Hub',
-          image: 'https://images.unsplash.com/photo-1516690554117-d94e32e02506?w=900&q=80&auto=format&fit=crop',
+          image: 'https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0c/b2/79/37/solang-valley-manali.jpg?w=1200&h=-1&s=1',
           imageAlt: 'Paragliding over Solang Valley with snow mountains in the distance',
           description:
             'Solang Valley (2,480 m) is Manali\'s premier adventure zone, just 14 km from town. In winter, it transforms into a ski resort. In summer, it buzzes with paragliding, zorbing, ATV rides, and rope activities. The cable car from Solang to Shitidhar offers breathtaking views of the Beas Kund glacier.',
@@ -119,7 +119,7 @@ export const BLOGS = [
         {
           id: 'hadimba',
           h2: 'Hadimba Temple & Old Manali',
-          image: 'https://images.unsplash.com/photo-1605649487212-47bdab064df7?w=900&q=80&auto=format&fit=crop',
+          image: 'https://www.indiatourismpackage.com/assets/images/temples/hadimba-temple-4.webp',
           imageAlt: 'Hadimba Devi Temple surrounded by ancient cedar trees in Manali',
           description:
             'The Hadimba Devi Temple is a unique wooden pagoda-style temple dedicated to Hadimba, wife of Bhima from the Mahabharata. Surrounded by towering cedar deodars, the temple is a serene sanctuary. Old Manali, with its hippie cafes, artisan shops, and Buddhist monastery, is a charming contrast to the commercial Mall Road.',
@@ -161,8 +161,8 @@ export const BLOGS = [
     dateModified: '2025-06-01',
     author: 'Himalayan Holidays',
     heroGradient: 'from-orange-800 to-red-900',
-    heroImage: 'https://images.unsplash.com/photo-1524492412937-b28074a5d7da?w=1600&q=85&auto=format&fit=crop',
-    cardImage: 'https://images.unsplash.com/photo-1524492412937-b28074a5d7da?w=800&q=80&auto=format&fit=crop',
+     heroImage: 'https://static.toiimg.com/photo/msid-115886096,width-96,height-65.cms',
+    cardImage: 'https://static.toiimg.com/photo/msid-115886096,width-96,height-65.cms',
     excerpt:
       'Rajasthan is India in its most vivid form — towering forts, lake palaces, colourful bazaars, and warm desert sunsets. This 7-day itinerary takes you through the best of the Pink, Blue, and White cities.',
     content: {
@@ -222,6 +222,114 @@ export const BLOGS = [
       ],
       relatedPackageSlug: 'rajasthan-tour-package',
       relatedPackageLabel: 'Royal Rajasthan Golden Triangle',
+    },
+  },
+  {
+    slug: 'places-to-visit-in-delhi-2026-travel-guide',
+    title: 'Top Places to Visit in Delhi (2026 Travel Guide)',
+    metaTitle: 'Top 15 Places to Visit in Delhi 2026 | Travel Guide',
+    metaDescription:
+      'Planning a Delhi trip in 2026? Discover the best places to visit in Delhi — Red Fort, Qutub Minar, India Gate, Lotus Temple, Chandni Chowk and more.',
+    category: 'Travel Guide',
+    readTime: '8 min read',
+    publishedAt: '2026-05-01',
+    dateModified: '2026-05-01',
+    author: 'Himalayan Holidays',
+    heroGradient: 'from-rose-900 to-slate-900',
+    heroImage: 'https://images.unsplash.com/photo-1587474260584-136574528ed5?w=1600&q=85&auto=format&fit=crop',
+    cardImage: 'https://images.unsplash.com/photo-1587474260584-136574528ed5?w=800&q=80&auto=format&fit=crop',
+    excerpt:
+      'Delhi wears 7 empires of history on its sleeve while pulsing with modern energy. From Mughal forts to lotus-shaped temples to legendary food lanes — here are the must-visit places to plan your perfect Delhi trip in 2026.',
+    content: {
+      intro:
+        'Delhi is not just a city — it\'s a feeling. One moment you\'re standing in front of a 17th-century Mughal fort, and the next you\'re sipping coffee inside a glass-walled cafe in Cyber Hub. India\'s capital wears 7 empires of history on its sleeve while pulsing with the energy of a thoroughly modern metropolis. This 2026 Delhi travel guide covers the best places to visit, top tourist spots, food legends and travel tips so you can plan a trip that actually delivers.',
+      sections: [
+        {
+          id: 'red-fort',
+          h2: 'Red Fort (Lal Qila) — Mughal Glory in Sandstone',
+          image: 'https://tripguides.in/images/places/red-fort.jpg',
+          imageAlt: 'Red Fort sandstone ramparts and Lahori Gate in Old Delhi',
+          description:
+            'Built by Shah Jahan in 1648 as the seat of Mughal power, the Red Fort is Delhi\'s most iconic landmark. The 2.4 km of red sandstone walls enclose palaces, audience halls and gardens that defined imperial architecture for two centuries. Every Independence Day since 1947, the Indian Prime Minister hoists the national flag from its ramparts. The evening sound-and-light show brings 400 years of Mughal history vividly to life.',
+          highlights: ['UNESCO World Heritage Site', 'Diwan-i-Aam & Diwan-i-Khas halls', 'Independence Day flag hoisting venue', 'Evening sound & light show', 'Lahori & Delhi Gate entrances'],
+          bestTime: 'October to March',
+          h3Tip: 'Pro Tip: Enter through the Lahori Gate and time your visit for the 7 PM sound-and-light show — book tickets online to skip the queue.',
+        },
+        {
+          id: 'qutub-minar',
+          h2: 'Qutub Minar — Tallest Brick Minaret in the World',
+          image: 'https://imgmediagumlet.lbb.in/media/2023/11/654377527b6db1676cee7aa3_1698920274430.jpg',
+          imageAlt: 'Qutub Minar tower against blue sky with carved sandstone storeys',
+          description:
+            'Towering 73 metres above the Mehrauli archaeological complex, Qutub Minar was begun by Qutb-ud-din Aibak in 1193 and completed by his successors. Five tapering storeys of red sandstone and marble are intricately carved with verses from the Quran. The surrounding complex includes the Iron Pillar of Delhi — a 1,600-year-old metallurgical marvel that has not rusted despite open-air exposure for centuries.',
+          highlights: ['73-metre tall minaret (UNESCO heritage)', 'Iron Pillar of Delhi (rust-free for 1,600 years)', 'Quwwat-ul-Islam Mosque ruins', 'Alai Darwaza gateway', 'Tomb of Iltutmish'],
+          bestTime: 'October to March (early morning ideal)',
+          h3Tip: 'Pro Tip: Reach by 8 AM when the gates open — the morning light hits the carvings perfectly and crowds stay thin until 10 AM.',
+        },
+        {
+          id: 'humayuns-tomb',
+          h2: 'Humayun\'s Tomb — The Predecessor of the Taj Mahal',
+          image: 'https://c4.wallpaperflare.com/wallpaper/986/633/101/humayuns-tomb-new-delhi-india-wallpaper-thumb.jpg',
+          imageAlt: 'Humayun\'s Tomb red sandstone dome with Charbagh gardens',
+          description:
+            'Commissioned in 1565 by Empress Bega Begum for her husband Emperor Humayun, this was the first garden-tomb built on the Indian subcontinent. Its symmetrical Charbagh-style gardens, central red sandstone dome, and Persian-Mughal architectural fusion later inspired the Taj Mahal at Agra. Restored beautifully by the Aga Khan Trust over the past two decades, the tomb is now one of Delhi\'s most peaceful heritage sites.',
+          highlights: ['Inspiration for the Taj Mahal', 'Charbagh (four-quartered) Mughal gardens', 'Tomb of Isa Khan in the same complex', 'UNESCO World Heritage Site', 'Beautifully lit during evenings'],
+          bestTime: 'October to March (sunset is magical)',
+          h3Tip: 'Pro Tip: Visit just before sunset — the golden-hour light on the red sandstone is unforgettable, and the gardens are at their quietest before closing.',
+        },
+        {
+          id: 'india-gate',
+          h2: 'India Gate & Kartavya Path — Heart of New Delhi',
+          image: 'https://media.istockphoto.com/id/471052720/photo/india-gate-delhi-illuminated-dusk-scene.jpg?s=612x612&w=0&k=20&c=L714iEOhpNMAO3tuWY1MzOeExNLFR71XQQJc0iDXtPY=',
+          imageAlt: 'India Gate war memorial illuminated at night',
+          description:
+            'The 42-metre tall India Gate is a war memorial honouring 84,000 Indian soldiers who died in World War I and the Anglo-Afghan War. Standing at the eastern end of the newly renovated Kartavya Path (formerly Rajpath), it anchors a 3-kilometre ceremonial avenue that hosts the Republic Day parade every January. Evenings here are pure Delhi: families on picnics, kids chasing balloons, ice-cream vendors and the gate dramatically lit against the night sky.',
+          highlights: ['42-metre tall war memorial', 'National War Memorial added in 2019', '16 illuminated fountains along Kartavya Path', 'Republic Day parade route', 'Best after sunset (7 PM onwards)'],
+          bestTime: 'Year-round; evenings are most atmospheric',
+          h3Tip: 'Pro Tip: Combine India Gate with a 20-minute walk along Kartavya Path towards Rashtrapati Bhavan — the fountains and lit avenue make for stunning photos.',
+        },
+        {
+          id: 'akshardham',
+          h2: 'Akshardham Temple — A Modern Spiritual Marvel',
+          image: 'https://media.easemytrip.com/media/Blog/India/637116640324801740/637116640324801740NJDbTX.jpg',
+          imageAlt: 'Akshardham Temple pink sandstone architecture in Delhi',
+          description:
+            'Inaugurated in 2005, Akshardham is one of the world\'s largest Hindu temple complexes — built entirely from pink sandstone and Italian Carrara marble without a single piece of steel or cement. Over 20,000 deities, sages and saints are carved across its surfaces. Beyond the temple itself, the complex includes a 15-minute boat ride through 10,000 years of Indian heritage, a robotic show on Swaminarayan\'s life, and a spectacular evening musical fountain.',
+          highlights: ['Guinness-recognised largest Hindu temple complex', 'Sahaj Anand musical fountain show (evenings)', 'Yagnapurush Kund stepwell', 'Cultural boat ride exhibition', 'No phones or cameras inside (lockers available)'],
+          bestTime: 'Tuesday to Sunday, 9:30 AM onwards (closed Mondays)',
+          h3Tip: 'Pro Tip: Plan a 4-hour visit and stay for the evening musical fountain show at sunset — easily the most magical 25 minutes of any Delhi trip.',
+        },
+        {
+          id: 'lotus-temple',
+          h2: 'Lotus Temple — Architectural Poetry in Marble',
+          image: 'https://www.tripsavvy.com/thmb/3847JDXi0lXwS85Wz821zotKITg=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/GettyImages-185733537-5b51446046e0fb00378bc660.jpg',
+          imageAlt: 'Lotus Temple white marble petals with reflecting pools',
+          description:
+            'Completed in 1986, the Bahá\'í House of Worship — known popularly as the Lotus Temple — is a 27-petalled marble lotus rising out of nine reflective pools. Designed by Iranian architect Fariborz Sahba, it ranks among the most-visited buildings in the world. The temple welcomes people of every religion to sit in silent meditation inside its central prayer hall. Entry is free, exterior photography is encouraged, and the surrounding gardens are perfect for an unhurried walk.',
+          highlights: ['27 free-standing marble petals', '9 reflecting pools around the structure', 'Open to all religions, free entry', 'Pin-drop silence inside the prayer hall', 'Walking distance from Kalkaji Mandir Metro'],
+          bestTime: 'Tuesday to Sunday; weekday mornings best',
+          h3Tip: 'Pro Tip: Combine with the ISKCON Temple just 2 km away for a contemplative half-day. Avoid Sundays after 11 AM — it gets very crowded.',
+        },
+        {
+          id: 'chandni-chowk',
+          h2: 'Chandni Chowk — Old Delhi\'s Beating Heart',
+          image: 'https://i.ytimg.com/vi/fPSSI0u61Ag/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLDkcb5Xd_6eLziNQLmTvSP8JRyQEw',
+          imageAlt: 'Bustling Chandni Chowk market lanes with shops and shoppers',
+          description:
+            'Designed by Princess Jahanara, daughter of Shah Jahan, in the 17th century, Chandni Chowk is one of India\'s oldest continuously running markets. Today its narrow lanes pulse with wedding shoppers, spice traders, food legends and silver merchants. From Paranthe Wali Gali (famous for stuffed parathas since the 1870s) to Khari Baoli (Asia\'s largest spice market), every corner here tells a story. Skip private cars — explore on foot or by e-rickshaw.',
+          highlights: ['Paranthe Wali Gali (legendary stuffed parathas)', 'Khari Baoli — Asia\'s largest spice market', 'Kinari Bazaar — bridal trousseau hub', 'Karim\'s near Jama Masjid (since 1913)', 'Old Famous Jalebi Wala (since 1884)'],
+          bestTime: 'Year-round; mornings before 11 AM for food, evenings for shopping',
+          h3Tip: 'Pro Tip: Do an Old Delhi food walk early morning on an empty stomach — start with bedmi puri, then parathas, then jalebi-rabri. Wear comfortable shoes; the lanes get tight.',
+        },
+      ],
+      faqs: [
+        { q: 'What is the best time to visit Delhi?', a: 'October to March is ideal — pleasant weather (15–25°C) and clear skies. Avoid April to June when temperatures cross 45°C, and check air quality during November (post-Diwali smog).' },
+        { q: 'How many days are enough to explore Delhi?', a: '3 days is the sweet spot to cover Old Delhi, New Delhi monuments and at least one shopping market. Add 1–2 days if you want to include day trips to Agra or Mathura.' },
+        { q: 'Is the Delhi Metro the best way to get around?', a: 'Yes — the Delhi Metro is fast, air-conditioned, safe and reaches almost every major attraction. Get a smart card (₹150 deposit) to skip ticket queues. Use Uber/Ola only for spots without metro access.' },
+        { q: 'Which markets are best for shopping in Delhi?', a: 'Sarojini Nagar for budget fashion, Chandni Chowk for traditional and bridal wear, Dilli Haat for handicrafts and Khan Market for premium boutiques and cafes.' },
+      ],
+      relatedPackageSlug: null,
+      relatedPackageLabel: null,
     },
   },
 ]
