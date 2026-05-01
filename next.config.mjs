@@ -99,6 +99,10 @@ const nextConfig = {
         protocol:"https",
         hostname:"static.toiimg.com",
          pathname:"/**"
+      },
+      {
+        protocol:"https",
+        hostname:'blogger.googleusercontent.com'
       }
     ],
   },

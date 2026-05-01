@@ -269,7 +269,7 @@ export const BLOGS = [
         {
           id: 'humayuns-tomb',
           h2: 'Humayun\'s Tomb — The Predecessor of the Taj Mahal',
-          image: 'https://c4.wallpaperflare.com/wallpaper/986/633/101/humayuns-tomb-new-delhi-india-wallpaper-thumb.jpg',
+          image: 'https://imgmediagumlet.lbb.in/media/2024/12/67515291fef45a07cdda93cb_1733382801911.jpg',
           imageAlt: 'Humayun\'s Tomb red sandstone dome with Charbagh gardens',
           description:
             'Commissioned in 1565 by Empress Bega Begum for her husband Emperor Humayun, this was the first garden-tomb built on the Indian subcontinent. Its symmetrical Charbagh-style gardens, central red sandstone dome, and Persian-Mughal architectural fusion later inspired the Taj Mahal at Agra. Restored beautifully by the Aga Khan Trust over the past two decades, the tomb is now one of Delhi\'s most peaceful heritage sites.',
