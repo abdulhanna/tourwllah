@@ -10,6 +10,7 @@ const navLinks = [
   { label: 'Kashmir', href: '/kashmir-tour-package' },
   { label: 'Manali', href: '/manali-tour-package' },
   { label: 'Rajasthan', href: '/rajasthan-tour-package' },
+  { label: 'North East', href: '/north-east-tour-package' },
 ]
 
 export default function Navbar() {

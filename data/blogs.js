@@ -332,4 +332,101 @@ export const BLOGS = [
       relatedPackageLabel: null,
     },
   },
+  {
+    slug: 'top-places-to-visit-in-meghalaya-2026',
+    title: 'Top Places to Visit in Meghalaya — 2026 Travel Guide',
+    metaTitle: 'Top Places to Visit in Meghalaya 2026 | Travel Guide',
+    metaDescription:
+      'Plan your Meghalaya trip in 2026 — Shillong, Dawki, Cherrapunjee, Mawlynnong & more. Best places, itinerary tips, hotels and travel guide.',
+    category: 'Travel Guide',
+    readTime: '7 min read',
+    publishedAt: '2026-05-01',
+    dateModified: '2026-05-01',
+    author: 'Himalayan Holidays',
+    heroGradient: 'from-emerald-900 to-slate-900',
+    heroImage: 'https://images.unsplash.com/photo-1689089526066-c7e6e95ee265?w=1600&q=85&auto=format&fit=crop',
+    cardImage: 'https://images.unsplash.com/photo-1689089526066-c7e6e95ee265?w=800&q=80&auto=format&fit=crop',
+    excerpt:
+      'Meghalaya wears its name well — the Abode of Clouds. From Asia\'s cleanest village to a river so clear boats look like they float on air, here are the must-visit places to plan your perfect Meghalaya trip in 2026.',
+    content: {
+      intro:
+        'Meghalaya is the kind of place that ruins other destinations for you. The Umngot River at Dawki is so transparent that boats appear to float in mid-air. Mawlynnong has been called Asia\'s cleanest village. Cherrapunjee, once the wettest place on earth, hides waterfalls so dramatic they look CGI-rendered. This 2026 Meghalaya travel guide covers the best places to visit — from Shillong\'s pine-covered hills to the cave country down south — so you can plan a North East trip that actually delivers.',
+      sections: [
+        {
+          id: 'shillong',
+          h2: 'Shillong — Scotland of the East',
+          image: 'https://images.unsplash.com/photo-1609276804051-8c5e906cc430?w=900&q=80&auto=format&fit=crop',
+          imageAlt: 'Shillong city view with rolling green hills and pine forest',
+          description:
+            'Shillong, Meghalaya\'s capital, sits at 1,496 metres and is nicknamed the "Scotland of the East" for its rolling pine-covered hills and cool climate. The city is the launchpad for any Meghalaya trip — vibrant Khasi culture, live music venues that earned Shillong its "Rock Capital of India" tag, and viewpoints like Laitlum Canyon and Shillong Peak that take your breath away. Wards Lake offers a paddleboat ride right in the city centre.',
+          highlights: ['Laitlum Canyon viewpoint', 'Shillong Peak (1,966 m panorama)', 'Elephant Falls — 3-tier waterfall', 'Wards Lake paddleboat ride', 'Police Bazaar for shopping & street food'],
+          bestTime: 'October to May',
+          h3Tip: 'Pro Tip: Visit Laitlum Canyon at sunrise — clouds drift between the cliffs and the entire valley glows. Worth setting the 5 AM alarm for.',
+        },
+        {
+          id: 'dawki-umngot',
+          h2: 'Dawki & Umngot River — The Crystal-Clear Wonder',
+          image: 'https://images.unsplash.com/photo-1716478004486-ee44d45ed9c9?w=900&q=80&auto=format&fit=crop',
+          imageAlt: 'Boats floating on the crystal-clear Umngot River at Dawki',
+          description:
+            'Dawki is a small town on the India-Bangladesh border that\'s become world-famous for one reason — the Umngot River. The water is so transparent that boats appear suspended in mid-air, casting sharp shadows on the riverbed below. The 30-minute boat ride here is the highlight of every Meghalaya trip. Don\'t miss the Indo-Bangladesh border viewpoint at Tamabil — you can literally see Bangladesh from a stone\'s throw.',
+          highlights: ['Boat ride on the world\'s clearest river', 'Indo-Bangladesh Border at Tamabil', 'Hanging suspension bridge', 'Crystal-clear water photography', 'Best between November and April when water is clearest'],
+          bestTime: 'November to April (clearest water)',
+          h3Tip: 'Pro Tip: For the famous floating-boat photo, ask the boatman to take you near the bamboo bridge — the water is deepest and clearest there.',
+        },
+        {
+          id: 'mawlynnong',
+          h2: 'Mawlynnong — Asia\'s Cleanest Village',
+          image: 'https://images.unsplash.com/photo-1593813738953-fb3c93e0769d?w=900&q=80&auto=format&fit=crop',
+          imageAlt: 'Mawlynnong village street with bamboo dustbins and flower-lined paths',
+          description:
+            'Declared "Asia\'s cleanest village" by Discover India magazine in 2003, Mawlynnong is a 95-household Khasi village where cleanliness is a community religion. Bamboo dustbins line every path, residents sweep their lanes daily, and even foreign tourists end up self-policing. Climb the 85-foot bamboo Sky View tower for a panoramic look across the border into Bangladesh. The matrilineal Khasi culture here is itself a fascinating cultural experience.',
+          highlights: ['Bamboo dustbins on every path', 'Sky View bamboo tower (85 ft)', 'Matrilineal Khasi culture', 'Single Decker Living Root Bridge nearby', 'Border view into Bangladesh'],
+          bestTime: 'October to May',
+          h3Tip: 'Pro Tip: Stay overnight at a Mawlynnong homestay if possible — the village empties out after 5 PM and you get to experience the silence and stars without day-tripper crowds.',
+        },
+        {
+          id: 'living-root-bridge',
+          h2: 'Living Root Bridges — Khasi Engineering Marvel',
+          image: 'https://images.unsplash.com/photo-1742494267580-e026d3737f65?w=900&q=80&auto=format&fit=crop',
+          imageAlt: 'Living Root Bridge made from intertwined tree roots in Cherrapunjee',
+          description:
+            'Living Root Bridges are a uniquely Meghalayan marvel — the Khasi people grow them by training the aerial roots of rubber fig trees across rivers, a process that takes 15-30 years per bridge. Some are over 200 years old and can support 50 people at once. The most famous is the Double Decker Living Root Bridge in Nongriat near Cherrapunjee — a steep 3,500-step trek down (and back up) through forest, but absolutely worth the effort.',
+          highlights: ['Double Decker Bridge in Nongriat (3,500 steps each way)', 'Single Decker at Mawlynnong (easier access)', 'Some bridges over 200 years old', 'UNESCO World Heritage tentative list', 'Crystal swimming pools at the trek base'],
+          bestTime: 'October to April (avoid monsoon — slippery steps)',
+          h3Tip: 'Pro Tip: Wear good trekking shoes and start the Nongriat descent by 7 AM. The climb back up takes 2-3 hours and is steep — pace yourself, carry water and snacks.',
+        },
+        {
+          id: 'cherrapunjee',
+          h2: 'Cherrapunjee — Land of Roaring Waterfalls',
+          image: 'https://images.unsplash.com/photo-1707219004247-0657a598a23d?w=900&q=80&auto=format&fit=crop',
+          imageAlt: 'Nohkalikai Falls plunging from a cliff in Cherrapunjee',
+          description:
+            'Cherrapunjee (Sohra) was once the wettest place on earth and remains famous for its dramatic waterfalls and limestone caves. The star attraction is Nohkalikai Falls — India\'s tallest plunge waterfall at 1,115 feet, with a turquoise pool at its base. Seven Sisters Falls cascades in seven parallel streams over a single cliff, while Mawsmai Cave offers an easy 150-metre walk through cool limestone formations. Cherrapunjee in the right light feels like Iceland with extra greenery.',
+          highlights: ['Nohkalikai Falls — India\'s tallest plunge (1,115 ft)', 'Seven Sisters Falls — 7 streams over one cliff', 'Mawsmai limestone cave walk', 'Mawkdok Dympep Valley View', 'Arwah Cave — fossils embedded in walls'],
+          bestTime: 'October to May (waterfalls flow year-round)',
+          h3Tip: 'Pro Tip: Visit Nohkalikai in the morning when the sun lights up the turquoise pool. Afternoon clouds often hide the falls completely.',
+        },
+        {
+          id: 'krangsuri',
+          h2: 'Krangsuri Falls — The Hidden Turquoise Gem',
+          image: 'https://images.unsplash.com/photo-1633037499870-d105eb8b1daf?w=900&q=80&auto=format&fit=crop',
+          imageAlt: 'Krangsuri Waterfalls with turquoise blue pool surrounded by cliffs',
+          description:
+            'Hidden 30 km from Dawki, Krangsuri Falls is a relatively recent addition to most Meghalaya itineraries — and easily the most photogenic waterfall in the state. The water cascades into a deep turquoise-blue pool that\'s safe for swimming, surrounded by sandstone cliffs. Bamboo viewing platforms have been built around the falls, and you can rent life jackets at the entry. Far less crowded than Cherrapunjee\'s waterfalls.',
+          highlights: ['Turquoise-blue swimming pool', 'Bamboo viewing platforms', 'Life jackets and rafts on rent', 'Far less crowded than Cherrapunjee', '30 km drive from Dawki'],
+          bestTime: 'November to April (cleanest water for swimming)',
+          h3Tip: 'Pro Tip: Carry your swimwear and a quick-dry towel. The water is cold but the pool is irresistible — most travellers regret skipping the swim.',
+        },
+      ],
+      faqs: [
+        { q: 'What is the best time to visit Meghalaya?', a: 'October to May is ideal — clear skies, pleasant weather and all waterfalls flowing. Avoid June to September if you don\'t enjoy heavy rain (Cherrapunjee gets up to 12 metres of rain annually).' },
+        { q: 'How many days are enough to explore Meghalaya?', a: '5 days is the sweet spot — 2 nights in Shillong, 1 in Dawki and 1 in Cherrapunjee. Add 2 more days if you want to combine with Kaziranga or Tawang.' },
+        { q: 'What should I pack for a Meghalaya trip?', a: 'Waterproof jacket, light woollens (Oct–Mar), trekking shoes with grip, swimwear (Krangsuri & Dawki), power bank, mosquito repellent and cash (ATMs are limited outside Shillong).' },
+        { q: 'Is Meghalaya safe for solo women travellers?', a: 'Yes — Meghalaya is one of India\'s safest states. The matrilineal Khasi society means women hold significant social standing. Locals are friendly and helpful.' },
+      ],
+      relatedPackageSlug: 'north-east-tour-package',
+      relatedPackageLabel: 'North East Tour — Shillong, Dawki & Cherrapunjee',
+    },
+  },
 ]

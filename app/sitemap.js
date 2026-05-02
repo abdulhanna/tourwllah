@@ -42,6 +42,16 @@ export default function sitemap() {
         { url: DESTINATIONS.find(d => d.slug === 'rajasthan').cardImage, title: 'Rajasthan — Forts and Palaces' },
       ],
     },
+    {
+      url: `${BASE}/north-east-tour-package`,
+      lastModified: new Date(),
+      changeFrequency: 'weekly',
+      priority: 0.9,
+      images: [
+        { url: DESTINATIONS.find(d => d.slug === 'north-east').heroImage, title: 'North East Tour Package' },
+        { url: DESTINATIONS.find(d => d.slug === 'north-east').cardImage, title: 'Meghalaya — Dawki River' },
+      ],
+    },
     { url: `${BASE}/blog`, lastModified: new Date(), changeFrequency: 'weekly', priority: 0.8 },
     { url: `${BASE}/packages`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.5 },
   ]
