@@ -3,9 +3,9 @@ export const DESTINATIONS = [
     slug: 'kashmir',
     landingSlug: 'kashmir-tour-package',
     packageId: 'kashmir-001',
-    metaTitle: 'Kashmir Tour Package 2025 | Best Kashmir Holiday | Himalayan Holidays',
+    metaTitle: 'Kashmir Tour Package 2025 | Best Kashmir Holiday | Tripcart Holidays',
     metaDescription:
-      'Book the best Kashmir tour package from Himalayan Holidays. 5N/6D with houseboat stay, Gulmarg Gondola, Pahalgam & Sonmarg. Get an instant quote on WhatsApp.',
+      'Book the best Kashmir tour package from Tripcart Holidays. 5N/6D with houseboat stay, Gulmarg Gondola, Pahalgam & Sonmarg. Get an instant quote on WhatsApp.',
     heroHeading: 'Kashmir — Paradise on Earth',
     heroSubheading: 'Houseboat stays · Gondola rides · Snow-capped peaks',
     heroGradient: 'from-teal-900 via-teal-800 to-slate-900',
@@ -29,7 +29,7 @@ export const DESTINATIONS = [
     faqs: [
       { q: 'What is the best time to visit Kashmir?', a: 'April–June for spring blooms and pleasant weather. December–February for snowfall and winter sports. September–November for autumn colours and clear skies.' },
       { q: 'Is Kashmir safe for tourists?', a: 'Tourist areas in the Kashmir Valley are well-guarded and generally safe. Hundreds of thousands of tourists visit annually. Always check current advisories before travel.' },
-      { q: 'How do I book a Kashmir package with Himalayan Holidays?', a: 'Simply click the WhatsApp button and our team will respond within minutes with availability, pricing, and customisation options.' },
+      { q: 'How do I book a Kashmir package with Tripcart Holidays?', a: 'Simply click the WhatsApp button and our team will respond within minutes with availability, pricing, and customisation options.' },
       { q: 'Is the Dal Lake houseboat experience worth it?', a: 'Absolutely! A houseboat stay is the quintessential Kashmir experience. The houseboats are well-equipped with attached bathrooms, electricity, and warm interiors.' },
       { q: 'What should I pack for a Kashmir trip?', a: 'Warm layers (even in summer), sturdy walking shoes, sunscreen, sunglasses, and cash. Carry a light rain jacket during spring months.' },
     ],
@@ -38,9 +38,9 @@ export const DESTINATIONS = [
     slug: 'manali',
     landingSlug: 'manali-tour-package',
     packageId: 'manali-001',
-    metaTitle: 'Manali Tour Package 2025 | Best Manali Holiday | Himalayan Holidays',
+    metaTitle: 'Manali Tour Package 2025 | Best Manali Holiday | Tripcart Holidays',
     metaDescription:
-      'Book the best Manali tour package from Himalayan Holidays. 4N/5D with Rohtang Pass, Solang Valley, river rafting and adventure activities. WhatsApp for instant quote.',
+      'Book the best Manali tour package from Tripcart Holidays. 4N/5D with Rohtang Pass, Solang Valley, river rafting and adventure activities. WhatsApp for instant quote.',
     heroHeading: 'Manali — Where Adventure Meets Serenity',
     heroSubheading: 'Snow peaks · Adventure sports · Cedar forests',
     heroGradient: 'from-blue-900 via-blue-800 to-slate-900',
@@ -73,9 +73,9 @@ export const DESTINATIONS = [
     slug: 'rajasthan',
     landingSlug: 'rajasthan-tour-package',
     packageId: 'rajasthan-001',
-    metaTitle: 'Rajasthan Tour Package 2025 | Royal Rajasthan Holiday | Himalayan Holidays',
+    metaTitle: 'Rajasthan Tour Package 2025 | Royal Rajasthan Holiday | Tripcart Holidays',
     metaDescription:
-      'Book a Royal Rajasthan tour package. 6N/7D covering Jaipur, Jodhpur & Udaipur — forts, lake palaces, desert culture. Get an instant WhatsApp quote from Himalayan Holidays.',
+      'Book a Royal Rajasthan tour package. 6N/7D covering Jaipur, Jodhpur & Udaipur — forts, lake palaces, desert culture. Get an instant WhatsApp quote from Tripcart Holidays.',
     heroHeading: 'Rajasthan — The Land of Kings',
     heroSubheading: 'Majestic forts · Lake palaces · Desert sunsets',
     heroGradient: 'from-orange-900 via-red-800 to-slate-900',
@@ -108,7 +108,7 @@ export const DESTINATIONS = [
     slug: 'north-east',
     landingSlug: 'north-east-tour-package',
     packageId: 'northeast-001',
-    metaTitle: 'North East Tour Package 2026 | Shillong Dawki Cherrapunjee | Himalayan Holidays',
+    metaTitle: 'North East Tour Package 2026 | Shillong Dawki Cherrapunjee | Tripcart Holidays',
     metaDescription:
       'Book the best North East tour package — 4N/5D Shillong, Dawki & Cherrapunjee. Private Innova, handpicked hotels, Mawlynnong & Dawki river boat ride. WhatsApp for instant quote.',
     heroHeading: 'North East — Where Clouds Live on Earth',

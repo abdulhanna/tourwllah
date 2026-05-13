@@ -7,6 +7,6 @@ export default function robots() {
         disallow: ['/create-package', '/api/'],
       },
     ],
-    sitemap: 'https://himalayanholidays.in/sitemap.xml',
+    sitemap: 'https://tripcartholidays.com/sitemap.xml',
   }
 }

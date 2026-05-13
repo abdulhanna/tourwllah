@@ -34,7 +34,7 @@ export default function Navbar() {
         <Link href="/" className="flex items-center gap-2 group">
           <span className="text-2xl">🏔</span>
           <span className="font-display font-bold text-lg text-brand group-hover:text-brand-dark transition-colors">
-            Himalayan Holidays
+            Tripcart Holidays
           </span>
         </Link>
 

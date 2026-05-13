@@ -16,7 +16,7 @@ export const metadata = {
   openGraph: {
     title: dest.metaTitle,
     description: dest.metaDescription,
-    url: 'https://himalayanholidays.in/north-east-tour-package',
+    url: 'https://tripcartholidays.com/north-east-tour-package',
     type: 'website',
     images: [{ url: dest.heroImage, width: 1200, height: 630, alt: 'North East Tour Package — Meghalaya' }],
   },
@@ -26,7 +26,7 @@ export const metadata = {
     description: dest.metaDescription,
     images: [dest.heroImage],
   },
-  alternates: { canonical: 'https://himalayanholidays.in/north-east-tour-package' },
+  alternates: { canonical: 'https://tripcartholidays.com/north-east-tour-package' },
 }
 
 const schema = {
@@ -34,7 +34,7 @@ const schema = {
   '@type': 'TouristAttraction',
   name: 'North East Tour Package — 4 Nights 5 Days',
   description: dest.metaDescription,
-  url: 'https://himalayanholidays.in/north-east-tour-package',
+  url: 'https://tripcartholidays.com/north-east-tour-package',
   image: dest.heroImage,
   touristType: ['Adventure', 'Family', 'Group', 'Nature'],
   geo: { '@type': 'GeoCoordinates', latitude: 25.5788, longitude: 91.8933 },
@@ -52,7 +52,7 @@ const schema = {
     priceCurrency: 'INR',
     availability: 'https://schema.org/InStock',
     validFrom: '2026-01-01',
-    seller: { '@type': 'TravelAgency', name: 'Himalayan Holidays', url: 'https://himalayanholidays.in' },
+    seller: { '@type': 'TravelAgency', name: 'Tripcart Holidays', url: 'https://tripcartholidays.com' },
   },
 }
 

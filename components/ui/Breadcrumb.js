@@ -6,7 +6,7 @@ export default function Breadcrumb({ items }) {
       '@type': 'ListItem',
       position: idx + 1,
       name: item.label,
-      item: `https://himalayanholidays.in${item.href}`,
+      item: `https://tripcartholidays.com${item.href}`,
     })),
   }
 

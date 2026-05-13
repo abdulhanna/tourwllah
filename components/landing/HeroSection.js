@@ -38,7 +38,7 @@ export default function HeroSection({ destination, pkg }) {
 
         <div className="mt-6 max-w-3xl">
           <div className="inline-flex items-center gap-2 bg-white/15 backdrop-blur-md text-white text-xs font-semibold px-4 py-1.5 rounded-full mb-5 uppercase tracking-widest border border-white/20">
-            ✈ Himalayan Holidays · Tour Package
+            ✈ Tripcart Holidays · Tour Package
           </div>
           <h1 className="font-display text-4xl sm:text-5xl lg:text-6xl font-bold leading-tight mb-4 drop-shadow-lg">
             {heroHeading}

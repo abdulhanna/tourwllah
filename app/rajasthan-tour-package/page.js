@@ -16,7 +16,7 @@ export const metadata = {
   openGraph: {
     title: dest.metaTitle,
     description: dest.metaDescription,
-    url: 'https://himalayanholidays.in/rajasthan-tour-package',
+    url: 'https://tripcartholidays.com/rajasthan-tour-package',
     type: 'website',
     images: [{ url: dest.heroImage, width: 1200, height: 630, alt: 'Rajasthan Tour Package — Forts, Palaces and Desert' }],
   },
@@ -26,7 +26,7 @@ export const metadata = {
     description: dest.metaDescription,
     images: [dest.heroImage],
   },
-  alternates: { canonical: 'https://himalayanholidays.in/rajasthan-tour-package' },
+  alternates: { canonical: 'https://tripcartholidays.com/rajasthan-tour-package' },
 }
 
 const schema = {
@@ -34,7 +34,7 @@ const schema = {
   '@type': 'TouristAttraction',
   name: 'Rajasthan Tour Package — 6 Nights 7 Days',
   description: dest.metaDescription,
-  url: 'https://himalayanholidays.in/rajasthan-tour-package',
+  url: 'https://tripcartholidays.com/rajasthan-tour-package',
   image: dest.heroImage,
   touristType: ['Cultural', 'Heritage', 'Family', 'Luxury'],
   geo: { '@type': 'GeoCoordinates', latitude: 27.0238, longitude: 74.2179 },
@@ -52,7 +52,7 @@ const schema = {
     priceCurrency: 'INR',
     availability: 'https://schema.org/InStock',
     validFrom: '2025-01-01',
-    seller: { '@type': 'TravelAgency', name: 'Himalayan Holidays', url: 'https://himalayanholidays.in' },
+    seller: { '@type': 'TravelAgency', name: 'Tripcart Holidays', url: 'https://tripcartholidays.com' },
   },
 }
 

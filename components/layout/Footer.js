@@ -31,7 +31,7 @@ export default function Footer() {
           <div>
             <div className="flex items-center gap-2 mb-4">
               <span className="text-2xl">🏔</span>
-              <span className="font-display font-bold text-lg text-white">Himalayan Holidays</span>
+              <span className="font-display font-bold text-lg text-white">Tripcart Holidays</span>
             </div>
             <p className="text-sm text-slate-400 leading-relaxed mb-5">
               Creating unforgettable travel experiences across the Indian Himalayas and beyond since 2014.
@@ -86,7 +86,7 @@ export default function Footer() {
               ))}
             </ul>
             <div className="space-y-1.5 text-sm text-slate-400">
-              <p>📧 info@himalayanholidays.in</p>
+              <p>📧 info@tripcartholidays.com</p>
               <p>📞 +91-XXXXXXXXXX</p>
             </div>
           </div>
@@ -94,7 +94,7 @@ export default function Footer() {
 
         <div className="mt-12 pt-8 border-t border-slate-800 flex flex-col sm:flex-row items-center justify-between gap-4">
           <p className="text-sm text-slate-500">
-            © {new Date().getFullYear()} Himalayan Holidays. All rights reserved.
+            © {new Date().getFullYear()} Tripcart Holidays. All rights reserved.
           </p>
           <p className="text-xs text-slate-600">
             Crafted with ♥ for wanderers

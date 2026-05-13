@@ -20,25 +20,25 @@ const OG_IMAGE = 'https://images.unsplash.com/photo-1583417319070-4a69db38a482?w
 
 export const metadata = {
   title: {
-    default: 'Himalayan Holidays | Best Tour Packages in India',
-    template: '%s | Himalayan Holidays',
+    default: 'Tripcart Holidays | Best Tour Packages in India',
+    template: '%s | Tripcart Holidays',
   },
   description:
-    'Book Kashmir, Manali & Rajasthan tour packages. Himalayan Holidays offers customized itineraries with best prices. Chat on WhatsApp for instant quotes.',
-  keywords: ['Kashmir tour package', 'Manali tour package', 'Rajasthan tour package', 'Himalayan Holidays', 'India travel'],
-  metadataBase: new URL('https://himalayanholidays.in'),
-  alternates: { canonical: 'https://himalayanholidays.in' },
+    'Book Kashmir, Manali & Rajasthan tour packages. Tripcart Holidays offers customized itineraries with best prices. Chat on WhatsApp for instant quotes.',
+  keywords: ['Kashmir tour package', 'Manali tour package', 'Rajasthan tour package', 'Tripcart Holidays', 'India travel'],
+  metadataBase: new URL('https://tripcartholidays.com'),
+  alternates: { canonical: 'https://tripcartholidays.com' },
   openGraph: {
     type: 'website',
-    siteName: 'Himalayan Holidays',
-    title: 'Himalayan Holidays | Best Tour Packages in India',
-    description: 'Book Kashmir, Manali & Rajasthan tour packages with Himalayan Holidays.',
-    images: [{ url: OG_IMAGE, width: 1200, height: 630, alt: 'Himalayan Holidays — Best Tour Packages in India' }],
+    siteName: 'Tripcart Holidays',
+    title: 'Tripcart Holidays | Best Tour Packages in India',
+    description: 'Book Kashmir, Manali & Rajasthan tour packages with Tripcart Holidays.',
+    images: [{ url: OG_IMAGE, width: 1200, height: 630, alt: 'Tripcart Holidays — Best Tour Packages in India' }],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Himalayan Holidays | Best Tour Packages in India',
-    description: 'Book Kashmir, Manali & Rajasthan tour packages with Himalayan Holidays.',
+    title: 'Tripcart Holidays | Best Tour Packages in India',
+    description: 'Book Kashmir, Manali & Rajasthan tour packages with Tripcart Holidays.',
     images: [OG_IMAGE],
   },
   robots: { index: true, follow: true },
@@ -47,25 +47,25 @@ export const metadata = {
 const organizationSchema = {
   '@context': 'https://schema.org',
   '@type': 'TravelAgency',
-  name: 'Himalayan Holidays',
-  url: 'https://himalayanholidays.in',
+  name: 'Tripcart Holidays',
+  url: 'https://tripcartholidays.com',
   description: 'Best tour packages to Kashmir, Manali & Rajasthan. Customized holidays, houseboat stays, adventure trips and cultural tours across India.',
   telephone: '+91XXXXXXXXXX',
-  email: 'info@himalayanholidays.in',
+  email: 'info@tripcartholidays.com',
   address: { '@type': 'PostalAddress', addressCountry: 'IN' },
   sameAs: ['https://wa.me/91XXXXXXXXXX'],
-  logo: { '@type': 'ImageObject', url: 'https://himalayanholidays.in/og-image.jpg' },
+  logo: { '@type': 'ImageObject', url: 'https://tripcartholidays.com/og-image.jpg' },
   aggregateRating: { '@type': 'AggregateRating', ratingValue: '4.9', bestRating: '5', reviewCount: '1900' },
 }
 
 const websiteSchema = {
   '@context': 'https://schema.org',
   '@type': 'WebSite',
-  name: 'Himalayan Holidays',
-  url: 'https://himalayanholidays.in',
+  name: 'Tripcart Holidays',
+  url: 'https://tripcartholidays.com',
   potentialAction: {
     '@type': 'SearchAction',
-    target: { '@type': 'EntryPoint', urlTemplate: 'https://himalayanholidays.in/blog?q={search_term_string}' },
+    target: { '@type': 'EntryPoint', urlTemplate: 'https://tripcartholidays.com/blog?q={search_term_string}' },
     'query-input': 'required name=search_term_string',
   },
 }

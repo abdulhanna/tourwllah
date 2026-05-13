@@ -1,7 +1,7 @@
 import { BLOGS } from '@/data/blogs'
 import { DESTINATIONS } from '@/data/destinations'
 
-const BASE = 'https://himalayanholidays.in'
+const BASE = 'https://tripcartholidays.com'
 
 export default function sitemap() {
   const staticRoutes = [
@@ -10,7 +10,7 @@ export default function sitemap() {
       lastModified: new Date(),
       changeFrequency: 'weekly',
       priority: 1,
-      images: [{ url: DESTINATIONS[0].heroImage, title: 'Himalayan Holidays — Best Tour Packages in India' }],
+      images: [{ url: DESTINATIONS[0].heroImage, title: 'Tripcart Holidays — Best Tour Packages in India' }],
     },
     {
       url: `${BASE}/kashmir-tour-package`,

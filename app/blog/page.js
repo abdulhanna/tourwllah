@@ -5,22 +5,22 @@ import Link from 'next/link'
 const OG_IMAGE = 'https://images.unsplash.com/photo-1583417319070-4a69db38a482?w=1200&q=80&auto=format&fit=crop'
 
 export const metadata = {
-  title: { absolute: 'Travel Blog — India Tour Tips & Destination Guides | Himalayan Holidays' },
+  title: { absolute: 'Travel Blog — India Tour Tips & Destination Guides | Tripcart Holidays' },
   description:
-    'Explore our travel blog for expert tips on Kashmir, Manali and Rajasthan. Destination guides, itinerary ideas and travel inspiration from Himalayan Holidays.',
+    'Explore our travel blog for expert tips on Kashmir, Manali and Rajasthan. Destination guides, itinerary ideas and travel inspiration from Tripcart Holidays.',
   openGraph: {
-    title: 'Travel Blog | Himalayan Holidays',
-    description: 'Destination guides, travel tips and itinerary ideas from Himalayan Holidays.',
-    url: 'https://himalayanholidays.in/blog',
-    images: [{ url: OG_IMAGE, width: 1200, height: 630, alt: 'Himalayan Holidays Travel Blog' }],
+    title: 'Travel Blog | Tripcart Holidays',
+    description: 'Destination guides, travel tips and itinerary ideas from Tripcart Holidays.',
+    url: 'https://tripcartholidays.com/blog',
+    images: [{ url: OG_IMAGE, width: 1200, height: 630, alt: 'Tripcart Holidays Travel Blog' }],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Travel Blog | Himalayan Holidays',
-    description: 'Destination guides, travel tips and itinerary ideas from Himalayan Holidays.',
+    title: 'Travel Blog | Tripcart Holidays',
+    description: 'Destination guides, travel tips and itinerary ideas from Tripcart Holidays.',
     images: [OG_IMAGE],
   },
-  alternates: { canonical: 'https://himalayanholidays.in/blog' },
+  alternates: { canonical: 'https://tripcartholidays.com/blog' },
 }
 
 export default function Blog() {

@@ -20,11 +20,11 @@ export async function generateMetadata({ params }) {
     openGraph: {
       title: blog.metaTitle,
       description: blog.metaDescription,
-      url: `https://himalayanholidays.in/blog/${blog.slug}`,
+      url: `https://tripcartholidays.com/blog/${blog.slug}`,
       type: 'article',
       publishedTime: blog.publishedAt,
       modifiedTime: blog.dateModified,
-      authors: ['Himalayan Holidays'],
+      authors: ['Tripcart Holidays'],
       images: [{ url: blog.heroImage, width: 1200, height: 630, alt: blog.title }],
     },
     twitter: {
@@ -33,7 +33,7 @@ export async function generateMetadata({ params }) {
       description: blog.metaDescription,
       images: [blog.heroImage],
     },
-    alternates: { canonical: `https://himalayanholidays.in/blog/${blog.slug}` },
+    alternates: { canonical: `https://tripcartholidays.com/blog/${blog.slug}` },
   }
 }
 
@@ -54,18 +54,18 @@ export default async function BlogDetail({ params }) {
     dateModified: blog.dateModified || blog.publishedAt,
     author: {
       '@type': 'Organization',
-      name: 'Himalayan Holidays',
-      url: 'https://himalayanholidays.in',
+      name: 'Tripcart Holidays',
+      url: 'https://tripcartholidays.com',
     },
     publisher: {
       '@type': 'Organization',
-      name: 'Himalayan Holidays',
-      url: 'https://himalayanholidays.in',
-      logo: { '@type': 'ImageObject', url: 'https://himalayanholidays.in/og-image.jpg' },
+      name: 'Tripcart Holidays',
+      url: 'https://tripcartholidays.com',
+      logo: { '@type': 'ImageObject', url: 'https://tripcartholidays.com/og-image.jpg' },
     },
     mainEntityOfPage: {
       '@type': 'WebPage',
-      '@id': `https://himalayanholidays.in/blog/${blog.slug}`,
+      '@id': `https://tripcartholidays.com/blog/${blog.slug}`,
     },
   }
 

@@ -16,7 +16,7 @@ export const metadata = {
   openGraph: {
     title: dest.metaTitle,
     description: dest.metaDescription,
-    url: 'https://himalayanholidays.in/kashmir-tour-package',
+    url: 'https://tripcartholidays.com/kashmir-tour-package',
     type: 'website',
     images: [{ url: dest.heroImage, width: 1200, height: 630, alt: 'Kashmir Tour Package — Dal Lake and Himalayas' }],
   },
@@ -26,7 +26,7 @@ export const metadata = {
     description: dest.metaDescription,
     images: [dest.heroImage],
   },
-  alternates: { canonical: 'https://himalayanholidays.in/kashmir-tour-package' },
+  alternates: { canonical: 'https://tripcartholidays.com/kashmir-tour-package' },
 }
 
 const schema = {
@@ -34,7 +34,7 @@ const schema = {
   '@type': 'TouristAttraction',
   name: 'Kashmir Tour Package — 5 Nights 6 Days',
   description: dest.metaDescription,
-  url: 'https://himalayanholidays.in/kashmir-tour-package',
+  url: 'https://tripcartholidays.com/kashmir-tour-package',
   image: dest.heroImage,
   touristType: ['Adventure', 'Honeymoon', 'Family', 'Nature'],
   geo: { '@type': 'GeoCoordinates', latitude: 34.0837, longitude: 74.7973 },
@@ -52,7 +52,7 @@ const schema = {
     priceCurrency: 'INR',
     availability: 'https://schema.org/InStock',
     validFrom: '2025-01-01',
-    seller: { '@type': 'TravelAgency', name: 'Himalayan Holidays', url: 'https://himalayanholidays.in' },
+    seller: { '@type': 'TravelAgency', name: 'Tripcart Holidays', url: 'https://tripcartholidays.com' },
   },
 }
 

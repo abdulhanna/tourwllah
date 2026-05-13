@@ -120,7 +120,7 @@ function buildPreviewHTML(pkg) {
   return `
     <div style="color:#0f172a;font-size:14px;line-height:1.6">
       <div style="text-align:center;padding-bottom:20px;border-bottom:2px solid #0f766e;margin-bottom:20px">
-        <h1 style="font-size:24px;color:#0f766e;margin:0">🏔 Himalayan Holidays</h1>
+        <h1 style="font-size:24px;color:#0f766e;margin:0">🏔 Tripcart Holidays</h1>
         <h2 style="font-size:18px;margin:8px 0 4px">${pkg.title}</h2>
         <p style="color:#666;margin:0">${pkg.duration} · ${pkg.destination}</p>
       </div>

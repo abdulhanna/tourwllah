@@ -9,19 +9,19 @@ import WhatsAppCTA from '@/components/landing/WhatsAppCTA'
 const OG_IMAGE = 'https://images.unsplash.com/photo-1583417319070-4a69db38a482?w=1200&q=80&auto=format&fit=crop'
 
 export const metadata = {
-  title: 'Himalayan Holidays | Best Tour Packages in India',
+  title: 'Tripcart Holidays | Best Tour Packages in India',
   description:
-    'Book Kashmir, Manali & Rajasthan tour packages. Himalayan Holidays offers customized itineraries with best prices. Chat on WhatsApp for instant quotes.',
-  alternates: { canonical: 'https://himalayanholidays.in' },
+    'Book Kashmir, Manali & Rajasthan tour packages. Tripcart Holidays offers customized itineraries with best prices. Chat on WhatsApp for instant quotes.',
+  alternates: { canonical: 'https://tripcartholidays.com' },
   openGraph: {
-    title: 'Himalayan Holidays | Best Tour Packages in India',
+    title: 'Tripcart Holidays | Best Tour Packages in India',
     description: 'Book Kashmir, Manali & Rajasthan tour packages. Customized itineraries, best prices, WhatsApp support.',
-    url: 'https://himalayanholidays.in',
-    images: [{ url: OG_IMAGE, width: 1200, height: 630, alt: 'Himalayan Holidays — Best Tour Packages in India' }],
+    url: 'https://tripcartholidays.com',
+    images: [{ url: OG_IMAGE, width: 1200, height: 630, alt: 'Tripcart Holidays — Best Tour Packages in India' }],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Himalayan Holidays | Best Tour Packages in India',
+    title: 'Tripcart Holidays | Best Tour Packages in India',
     description: 'Book Kashmir, Manali & Rajasthan tour packages. Customized itineraries, best prices, WhatsApp support.',
     images: [OG_IMAGE],
   },
@@ -192,7 +192,7 @@ export default function Home() {
 function WAButton() {
   return (
     <a
-      href="https://wa.me/91XXXXXXXXXX?text=Hi!%20I%20am%20interested%20in%20a%20tour%20package%20from%20Himalayan%20Holidays."
+      href="https://wa.me/91XXXXXXXXXX?text=Hi!%20I%20am%20interested%20in%20a%20tour%20package%20from%20Tripcart%20Holidays."
       target="_blank"
       rel="noopener noreferrer"
       className="inline-flex items-center gap-2 bg-green-500 hover:bg-green-600 text-white px-7 py-4 rounded-full font-bold text-base shadow-lg hover:shadow-xl transition-all duration-200"
