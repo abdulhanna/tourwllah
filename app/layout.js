@@ -16,8 +16,6 @@ const inter = Inter({
   display: 'swap',
 })
 
-const OG_IMAGE = 'https://images.unsplash.com/photo-1583417319070-4a69db38a482?w=1200&q=80&auto=format&fit=crop'
-
 export const metadata = {
   title: {
     default: 'Tripcart Holidays | Best Tour Packages in India',
@@ -33,13 +31,13 @@ export const metadata = {
     siteName: 'Tripcart Holidays',
     title: 'Tripcart Holidays | Best Tour Packages in India',
     description: 'Book Kashmir, Manali & Rajasthan tour packages with Tripcart Holidays.',
-    images: [{ url: OG_IMAGE, width: 1200, height: 630, alt: 'Tripcart Holidays — Best Tour Packages in India' }],
+    images: [{ url: '/og-image.png', width: 1200, height: 630, alt: 'Tripcart Holidays — Best Tour Packages in India' }],
   },
   twitter: {
     card: 'summary_large_image',
     title: 'Tripcart Holidays | Best Tour Packages in India',
     description: 'Book Kashmir, Manali & Rajasthan tour packages with Tripcart Holidays.',
-    images: [OG_IMAGE],
+    images: ['/twitter-image.png'],
   },
   robots: { index: true, follow: true },
 }
@@ -54,7 +52,7 @@ const organizationSchema = {
   email: 'info@tripcartholidays.com',
   address: { '@type': 'PostalAddress', addressCountry: 'IN' },
   sameAs: ['https://wa.me/917004015511'],
-  logo: { '@type': 'ImageObject', url: 'https://tripcartholidays.com/og-image.jpg' },
+  logo: { '@type': 'ImageObject', url: 'https://tripcartholidays.com/logo.png' },
   aggregateRating: { '@type': 'AggregateRating', ratingValue: '4.9', bestRating: '5', reviewCount: '1900' },
 }
 

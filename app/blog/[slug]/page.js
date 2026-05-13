@@ -61,7 +61,7 @@ export default async function BlogDetail({ params }) {
       '@type': 'Organization',
       name: 'Tripcart Holidays',
       url: 'https://tripcartholidays.com',
-      logo: { '@type': 'ImageObject', url: 'https://tripcartholidays.com/og-image.jpg' },
+      logo: { '@type': 'ImageObject', url: 'https://tripcartholidays.com/logo.png' },
     },
     mainEntityOfPage: {
       '@type': 'WebPage',

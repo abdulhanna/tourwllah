@@ -6,8 +6,6 @@ import { DESTINATIONS } from '@/data/destinations'
 import BlogCard from '@/components/blog/BlogCard'
 import WhatsAppCTA from '@/components/landing/WhatsAppCTA'
 
-const OG_IMAGE = 'https://images.unsplash.com/photo-1583417319070-4a69db38a482?w=1200&q=80&auto=format&fit=crop'
-
 export const metadata = {
   title: 'Tripcart Holidays | Best Tour Packages in India',
   description:
@@ -17,13 +15,13 @@ export const metadata = {
     title: 'Tripcart Holidays | Best Tour Packages in India',
     description: 'Book Kashmir, Manali & Rajasthan tour packages. Customized itineraries, best prices, WhatsApp support.',
     url: 'https://tripcartholidays.com',
-    images: [{ url: OG_IMAGE, width: 1200, height: 630, alt: 'Tripcart Holidays — Best Tour Packages in India' }],
+    images: [{ url: '/og-image.png', width: 1200, height: 630, alt: 'Tripcart Holidays — Best Tour Packages in India' }],
   },
   twitter: {
     card: 'summary_large_image',
     title: 'Tripcart Holidays | Best Tour Packages in India',
     description: 'Book Kashmir, Manali & Rajasthan tour packages. Customized itineraries, best prices, WhatsApp support.',
-    images: [OG_IMAGE],
+    images: ['/twitter-image.png'],
   },
 }
 
