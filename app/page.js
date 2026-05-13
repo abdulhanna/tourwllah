@@ -38,11 +38,16 @@ export default function Home() {
   return (
     <>
       {/* Hero */}
-      <section className="relative bg-gradient-to-br from-teal-900 via-teal-800 to-slate-900 text-white overflow-hidden">
-        <div className="absolute inset-0 bg-black/20" />
-        {/* Decorative circles */}
-        <div className="absolute -top-24 -right-24 w-96 h-96 rounded-full bg-white/5" />
-        <div className="absolute -bottom-12 -left-12 w-64 h-64 rounded-full bg-white/5" />
+      <section className="relative text-white overflow-hidden">
+        <Image
+          src="/Banner.png"
+          alt="Tripcart Holidays — explore India's most loved destinations"
+          fill
+          priority
+          sizes="100vw"
+          className="object-cover object-center"
+        />
+        <div className="absolute inset-0 bg-gradient-to-r from-black/70 via-black/40 to-black/20" />
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24 sm:py-32">
           <div className="max-w-3xl">
             <div className="inline-flex items-center gap-2 bg-white/15 backdrop-blur-sm text-white text-xs font-semibold px-4 py-1.5 rounded-full mb-6 uppercase tracking-wider">
