@@ -7,20 +7,22 @@ import BlogCard from '@/components/blog/BlogCard'
 import WhatsAppCTA from '@/components/landing/WhatsAppCTA'
 
 export const metadata = {
-  title: 'Tripcart Holidays | Best Tour Packages in India',
+  title: 'Tripcart Holidays | Kashmir, Manali, Rajasthan & North East Tour Packages',
   description:
-    'Book Kashmir, Manali & Rajasthan tour packages. Tripcart Holidays offers customized itineraries with best prices. Chat on WhatsApp for instant quotes.',
+    'Plan your perfect India holiday with Tripcart Holidays. Customized Kashmir, Manali, Rajasthan and North East tour packages with houseboat stays, adventure activities, and royal palaces. Expert-guided itineraries, best prices, and 24x7 WhatsApp support at +91 70040 15511.',
   alternates: { canonical: 'https://tripcartholidays.com' },
   openGraph: {
     title: 'Tripcart Holidays | Best Tour Packages in India',
-    description: 'Book Kashmir, Manali & Rajasthan tour packages. Customized itineraries, best prices, WhatsApp support.',
+    description:
+      'Customized Kashmir, Manali, Rajasthan and North East tour packages. Houseboat stays, adventure activities, royal palaces — handcrafted itineraries with WhatsApp support.',
     url: 'https://tripcartholidays.com',
     images: [{ url: '/og-image.png', width: 1200, height: 630, alt: 'Tripcart Holidays — Best Tour Packages in India' }],
   },
   twitter: {
     card: 'summary_large_image',
     title: 'Tripcart Holidays | Best Tour Packages in India',
-    description: 'Book Kashmir, Manali & Rajasthan tour packages. Customized itineraries, best prices, WhatsApp support.',
+    description:
+      'Customized Kashmir, Manali, Rajasthan and North East tour packages. Houseboat stays, adventure activities, royal palaces — handcrafted itineraries with WhatsApp support.',
     images: ['/twitter-image.png'],
   },
 }

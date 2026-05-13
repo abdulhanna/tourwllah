@@ -18,28 +18,74 @@ const inter = Inter({
 
 export const metadata = {
   title: {
-    default: 'Tripcart Holidays | Best Tour Packages in India',
+    default: 'Tripcart Holidays | Kashmir, Manali, Rajasthan & North East Tour Packages',
     template: '%s | Tripcart Holidays',
   },
   description:
-    'Book Kashmir, Manali & Rajasthan tour packages. Tripcart Holidays offers customized itineraries with best prices. Chat on WhatsApp for instant quotes.',
-  keywords: ['Kashmir tour package', 'Manali tour package', 'Rajasthan tour package', 'Tripcart Holidays', 'India travel'],
+    'Book customized Kashmir, Manali, Rajasthan and North East tour packages with Tripcart Holidays. Expert-guided itineraries, best prices, houseboat stays and 24x7 WhatsApp support. Get an instant quote at +91 70040 15511.',
+  keywords: [
+    'Tripcart Holidays',
+    'India tour packages',
+    'Kashmir tour package',
+    'Manali tour package',
+    'Rajasthan tour package',
+    'North East tour package',
+    'Shillong Dawki Cherrapunjee package',
+    'Meghalaya tour package',
+    'customized holidays India',
+    'WhatsApp travel booking',
+    'best tour operator India',
+  ],
+  authors: [{ name: 'Tripcart Holidays', url: 'https://tripcartholidays.com' }],
+  creator: 'Tripcart Holidays',
+  publisher: 'Tripcart Holidays',
+  category: 'travel',
+  applicationName: 'Tripcart Holidays',
   metadataBase: new URL('https://tripcartholidays.com'),
   alternates: { canonical: 'https://tripcartholidays.com' },
+  manifest: '/manifest.webmanifest',
+  icons: {
+    icon: [
+      { url: '/favicon.ico', sizes: 'any', type: 'image/x-icon' },
+      { url: '/icon-192.png', sizes: '192x192', type: 'image/png' },
+      { url: '/icon-512.png', sizes: '512x512', type: 'image/png' },
+    ],
+    apple: [{ url: '/apple-icon.png', sizes: '180x180', type: 'image/png' }],
+    shortcut: '/favicon.ico',
+  },
   openGraph: {
     type: 'website',
+    locale: 'en_IN',
     siteName: 'Tripcart Holidays',
     title: 'Tripcart Holidays | Best Tour Packages in India',
-    description: 'Book Kashmir, Manali & Rajasthan tour packages with Tripcart Holidays.',
+    description:
+      'Customized Kashmir, Manali, Rajasthan and North East tour packages. Expert-guided itineraries, best prices, and 24x7 WhatsApp support.',
     images: [{ url: '/og-image.png', width: 1200, height: 630, alt: 'Tripcart Holidays — Best Tour Packages in India' }],
   },
   twitter: {
     card: 'summary_large_image',
     title: 'Tripcart Holidays | Best Tour Packages in India',
-    description: 'Book Kashmir, Manali & Rajasthan tour packages with Tripcart Holidays.',
+    description:
+      'Customized Kashmir, Manali, Rajasthan and North East tour packages. Expert-guided itineraries, best prices, and 24x7 WhatsApp support.',
     images: ['/twitter-image.png'],
   },
-  robots: { index: true, follow: true },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      'max-image-preview': 'large',
+      'max-snippet': -1,
+      'max-video-preview': -1,
+    },
+  },
+}
+
+export const viewport = {
+  themeColor: '#0f766e',
+  width: 'device-width',
+  initialScale: 1,
 }
 
 const organizationSchema = {
