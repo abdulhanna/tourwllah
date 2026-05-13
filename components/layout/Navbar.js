@@ -1,6 +1,7 @@
 'use client'
 
 import { useState, useEffect } from 'react'
+import Image from 'next/image'
 import Link from 'next/link'
 
 const navLinks = [
@@ -29,13 +30,19 @@ export default function Navbar() {
         scrolled ? 'bg-white/95 backdrop-blur-sm shadow-md' : 'bg-white shadow-sm'
       }`}
     >
-      <nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between h-16">
+      <nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between h-20 sm:h-24">
         {/* Logo */}
-        <Link href="/" className="flex items-center gap-2 group">
-          <span className="text-2xl">🏔</span>
-          <span className="font-display font-bold text-lg text-brand group-hover:text-brand-dark transition-colors">
-            Tripcart Holidays
-          </span>
+        <Link href="/" aria-label="Tripcart Holidays — home" className="flex items-center group">
+          <Image
+            src="/logo.png"
+            alt="Tripcart Holidays"
+            width={688}
+            height={384}
+            priority
+            quality={100}
+            unoptimized
+            className="h-16 sm:h-20 w-auto object-contain"
+          />
         </Link>
 
         {/* Desktop nav */}
