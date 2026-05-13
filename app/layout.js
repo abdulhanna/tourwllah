@@ -50,10 +50,10 @@ const organizationSchema = {
   name: 'Tripcart Holidays',
   url: 'https://tripcartholidays.com',
   description: 'Best tour packages to Kashmir, Manali & Rajasthan. Customized holidays, houseboat stays, adventure trips and cultural tours across India.',
-  telephone: '+91XXXXXXXXXX',
+  telephone: '+917004015511',
   email: 'info@tripcartholidays.com',
   address: { '@type': 'PostalAddress', addressCountry: 'IN' },
-  sameAs: ['https://wa.me/91XXXXXXXXXX'],
+  sameAs: ['https://wa.me/917004015511'],
   logo: { '@type': 'ImageObject', url: 'https://tripcartholidays.com/og-image.jpg' },
   aggregateRating: { '@type': 'AggregateRating', ratingValue: '4.9', bestRating: '5', reviewCount: '1900' },
 }

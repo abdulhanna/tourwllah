@@ -87,7 +87,7 @@ export default function Footer() {
             </ul>
             <div className="space-y-1.5 text-sm text-slate-400">
               <p>📧 info@tripcartholidays.com</p>
-              <p>📞 +91-XXXXXXXXXX</p>
+              <p>📞 <a href="https://wa.me/917004015511" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">+91 70040 15511</a></p>
             </div>
           </div>
         </div>

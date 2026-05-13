@@ -49,7 +49,7 @@ export default function Blog() {
           <h2 className="font-display text-2xl sm:text-3xl font-bold mb-3">Ready to Plan Your Trip?</h2>
           <p className="text-white/80 mb-6">Chat with our travel experts on WhatsApp for a personalised itinerary</p>
           <a
-            href="https://wa.me/91XXXXXXXXXX?text=Hi!%20I%20want%20to%20plan%20a%20trip%20after%20reading%20your%20travel%20blog."
+            href="https://wa.me/917004015511?text=Hi!%20I%20want%20to%20plan%20a%20trip%20after%20reading%20your%20travel%20blog."
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-2 bg-white text-brand px-7 py-3.5 rounded-full font-bold hover:bg-slate-50 transition-colors"

@@ -152,7 +152,7 @@ export default async function BlogDetail({ params }) {
                 View Full Package →
               </Link>
               <a
-                href={`https://wa.me/91XXXXXXXXXX?text=Hi! I read your blog and want to book the ${encodeURIComponent(relatedPkg.title)}.`}
+                href={`https://wa.me/917004015511?text=Hi! I read your blog and want to book the ${encodeURIComponent(relatedPkg.title)}.`}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 bg-green-500 text-white px-6 py-3 rounded-full font-bold hover:bg-green-600 transition-colors text-sm"
