@@ -1,5 +1,6 @@
 'use client'
 
+import Image from 'next/image'
 import Link from 'next/link'
 import { openWhatsAppGeneral } from '@/lib/whatsapp'
 
@@ -29,10 +30,17 @@ export default function Footer() {
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10">
           {/* Brand */}
           <div>
-            <div className="flex items-center gap-2 mb-4">
-              <span className="text-2xl">🏔</span>
-              <span className="font-display font-bold text-lg text-white">Tripcart Holidays</span>
-            </div>
+            <Link href="/" aria-label="Tripcart Holidays — home" className="inline-block mb-4 bg-white rounded-lg p-2 shadow-sm">
+              <Image
+                src="/logo.png"
+                alt="Tripcart Holidays"
+                width={688}
+                height={384}
+                quality={100}
+                unoptimized
+                className="h-16 w-auto object-contain"
+              />
+            </Link>
             <p className="text-sm text-slate-400 leading-relaxed mb-5">
               Creating unforgettable travel experiences across the Indian Himalayas and beyond since 2014.
             </p>
