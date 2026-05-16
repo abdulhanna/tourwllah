@@ -11,6 +11,9 @@ export default function MyPackages() {
   const refresh = () => setPackages(getPackages())
 
   useEffect(() => {
+    // Client-only localStorage read on mount; the null-sentinel + loading guard
+    // below prevents a hydration mismatch. Intentional setState-on-mount.
+    // eslint-disable-next-line react-hooks/set-state-in-effect
     refresh()
   }, [])
 
