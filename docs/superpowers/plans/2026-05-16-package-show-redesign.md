@@ -1034,16 +1034,14 @@ Note: this preserves the original behaviour exactly — on mount (and whenever
 
 - [ ] **Step 9: create-package — redirect post-save to `/admin`**
 
-In `app/create-package/page.js`, in `handleSubmit`, change:
-```jsx
-    router.push('/packages')
-```
-to:
-```jsx
-    router.push('/admin')
-```
-Reason: `/packages` is now the public catalog; after saving, an agent must land back
-on their CRM list (`/admin`), not the public page.
+In `app/create-package/page.js`, change BOTH internal-navigation targets from
+`/packages` to `/admin`:
+1. In `handleSubmit`: `router.push('/packages')` → `router.push('/admin')`.
+2. The **Cancel** button's `onClick={() => router.push('/packages')}` →
+   `onClick={() => router.push('/admin')}`.
+Reason: `/packages` is now the public catalog; after saving OR cancelling, an agent
+must land back on their CRM list (`/admin`), not the public page. (The Cancel target
+was an oversight in the original plan, caught during Task 9 implementation review.)
 
 - [ ] **Step 10: Lint (full — must be fully clean now)**
 

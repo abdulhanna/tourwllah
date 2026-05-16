@@ -149,7 +149,7 @@ function PackageFormInner() {
               </button>
               <button
                 type="button"
-                onClick={() => router.push('/packages')}
+                onClick={() => router.push('/admin')}
                 className="px-5 py-3.5 rounded-xl border-2 border-slate-200 text-slate-600 font-semibold hover:bg-slate-50 transition-colors cursor-pointer"
               >
                 Cancel
