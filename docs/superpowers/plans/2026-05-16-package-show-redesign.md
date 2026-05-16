@@ -425,11 +425,12 @@ export default function QuoteModal({ open, onClose, destination, packageTitle })
   const [fallbackUrl, setFallbackUrl] = useState(null)
   const firstFieldRef = useRef(null)
 
+  // Side-effects only. State is fresh per open because QuoteButton (Task 6)
+  // conditionally MOUNTS this component ({open && <QuoteModal .../>}), so the
+  // useState initializers above run on every open — no state reset in the effect
+  // (which would trip the react-hooks/set-state-in-effect rule and fail lint).
   useEffect(() => {
     if (!open) return
-    setForm(f => ({ ...f, destination: destination || 'Not sure / Any' }))
-    setErrors({})
-    setFallbackUrl(null)
     document.body.style.overflow = 'hidden'
     const onKey = e => { if (e.key === 'Escape') onClose() }
     document.addEventListener('keydown', onKey)
@@ -438,7 +439,7 @@ export default function QuoteModal({ open, onClose, destination, packageTitle })
       document.body.style.overflow = ''
       document.removeEventListener('keydown', onKey)
     }
-  }, [open, destination, onClose])
+  }, [open, onClose])
 
   if (!open) return null
 
@@ -616,21 +617,30 @@ export default function QuoteButton({ destination, packageTitle, className, chil
       <button type="button" onClick={() => setOpen(true)} className={className}>
         {children || '✦ Get Free Quote'}
       </button>
-      <QuoteModal
-        open={open}
-        onClose={() => setOpen(false)}
-        destination={destination}
-        packageTitle={packageTitle}
-      />
+      {open && (
+        <QuoteModal
+          open
+          onClose={() => setOpen(false)}
+          destination={destination}
+          packageTitle={packageTitle}
+        />
+      )}
     </>
   )
 }
 ```
 
+**Why conditional mount (`{open && ...}`):** QuoteModal must mount fresh on each
+open so its `useState` initializers reset the form — this is what lets QuoteModal's
+effect avoid the `react-hooks/set-state-in-effect` lint error (see Task 5). Always
+rendering `<QuoteModal open={open} />` would keep a stale instance and re-introduce
+the need for an in-effect reset. The `open` prop is passed (always truthy here) so
+QuoteModal's internal `if (!open) return null` guard and prop contract stay intact.
+
 - [ ] **Step 2: Lint the new file**
 
-Run: `npm run lint`
-Expected: PASS — no errors for `components/packages/QuoteButton.js`.
+Run: `npx eslint components/packages/QuoteButton.js`
+Expected: PASS — 0 errors for `components/packages/QuoteButton.js`.
 
 - [ ] **Step 3: Commit**
 
