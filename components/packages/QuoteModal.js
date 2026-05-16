@@ -19,11 +19,11 @@ export default function QuoteModal({ open, onClose, destination, packageTitle })
   const [fallbackUrl, setFallbackUrl] = useState(null)
   const firstFieldRef = useRef(null)
 
+  // Side-effects only. State is fresh per open because QuoteButton conditionally
+  // MOUNTS this component, so the useState initializers run on every open — no
+  // state reset in the effect (which would trip react-hooks/set-state-in-effect).
   useEffect(() => {
     if (!open) return
-    setForm(f => ({ ...f, destination: destination || 'Not sure / Any' }))
-    setErrors({})
-    setFallbackUrl(null)
     document.body.style.overflow = 'hidden'
     const onKey = e => { if (e.key === 'Escape') onClose() }
     document.addEventListener('keydown', onKey)
@@ -32,7 +32,7 @@ export default function QuoteModal({ open, onClose, destination, packageTitle })
       document.body.style.overflow = ''
       document.removeEventListener('keydown', onKey)
     }
-  }, [open, destination, onClose])
+  }, [open, onClose])
 
   if (!open) return null
 
