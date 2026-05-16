@@ -46,11 +46,15 @@ export default function QuoteModal({ open, onClose, destination, packageTitle })
     setErrors(errs)
     if (Object.keys(errs).length > 0) return
 
+    const humanMonth = form.month
+      ? new Date(form.month + '-02').toLocaleDateString('en-IN', { month: 'long', year: 'numeric' })
+      : ''
+
     const data = {
       name: form.name.trim(),
       phone: form.phone.trim(),
       destination: form.destination === 'Not sure / Any' ? '' : form.destination,
-      dates: form.month,
+      dates: humanMonth,
       travellers: `${form.travellers} traveller${form.travellers === '1' ? '' : 's'}`,
       packageTitle,
       message: form.message,
@@ -70,7 +74,7 @@ export default function QuoteModal({ open, onClose, destination, packageTitle })
       aria-modal="true"
       aria-label="Get a free quote"
     >
-      <div className="absolute inset-0 bg-slate-900/70" onClick={onClose} />
+      <div className="absolute inset-0 bg-slate-900/70" onClick={onClose} role="presentation" aria-hidden="true" />
       <div className="relative bg-white rounded-2xl w-full max-w-md shadow-2xl max-h-[90vh] overflow-y-auto">
         <div className="bg-gradient-to-br from-brand to-brand-dark text-white px-5 py-4 relative">
           <button
@@ -86,8 +90,9 @@ export default function QuoteModal({ open, onClose, destination, packageTitle })
         </div>
         <form onSubmit={handleSubmit} className="p-5 space-y-3" noValidate>
           <div>
-            <label className="block text-xs text-slate-600 mb-1">Your name *</label>
+            <label htmlFor="quote-name" className="block text-xs text-slate-600 mb-1">Your name *</label>
             <input
+              id="quote-name"
               ref={firstFieldRef}
               value={form.name}
               onChange={update('name')}
@@ -97,8 +102,9 @@ export default function QuoteModal({ open, onClose, destination, packageTitle })
             {errors.name && <p className="text-xs text-red-600 mt-1">{errors.name}</p>}
           </div>
           <div>
-            <label className="block text-xs text-slate-600 mb-1">Phone / WhatsApp *</label>
+            <label htmlFor="quote-phone" className="block text-xs text-slate-600 mb-1">Phone / WhatsApp *</label>
             <input
+              id="quote-phone"
               value={form.phone}
               onChange={update('phone')}
               inputMode="tel"
@@ -108,8 +114,9 @@ export default function QuoteModal({ open, onClose, destination, packageTitle })
             {errors.phone && <p className="text-xs text-red-600 mt-1">{errors.phone}</p>}
           </div>
           <div>
-            <label className="block text-xs text-slate-600 mb-1">Destination</label>
+            <label htmlFor="quote-destination" className="block text-xs text-slate-600 mb-1">Destination</label>
             <select
+              id="quote-destination"
               value={form.destination}
               onChange={update('destination')}
               className="w-full border border-slate-300 rounded-lg px-3 py-2 text-sm bg-white"
@@ -119,8 +126,9 @@ export default function QuoteModal({ open, onClose, destination, packageTitle })
           </div>
           <div className="flex gap-3">
             <div className="flex-1">
-              <label className="block text-xs text-slate-600 mb-1">Travel month</label>
+              <label htmlFor="quote-month" className="block text-xs text-slate-600 mb-1">Travel month</label>
               <input
+                id="quote-month"
                 type="month"
                 value={form.month}
                 onChange={update('month')}
@@ -128,8 +136,9 @@ export default function QuoteModal({ open, onClose, destination, packageTitle })
               />
             </div>
             <div className="flex-1">
-              <label className="block text-xs text-slate-600 mb-1">Travellers</label>
+              <label htmlFor="quote-travellers" className="block text-xs text-slate-600 mb-1">Travellers</label>
               <select
+                id="quote-travellers"
                 value={form.travellers}
                 onChange={update('travellers')}
                 className="w-full border border-slate-300 rounded-lg px-3 py-2 text-sm bg-white"
@@ -141,8 +150,9 @@ export default function QuoteModal({ open, onClose, destination, packageTitle })
             </div>
           </div>
           <div>
-            <label className="block text-xs text-slate-600 mb-1">Anything else? (optional)</label>
+            <label htmlFor="quote-message" className="block text-xs text-slate-600 mb-1">Anything else? (optional)</label>
             <textarea
+              id="quote-message"
               value={form.message}
               onChange={update('message')}
               rows={2}
@@ -154,7 +164,7 @@ export default function QuoteModal({ open, onClose, destination, packageTitle })
             type="submit"
             className="w-full bg-green-600 hover:bg-green-700 text-white font-bold text-sm py-3 rounded-lg transition-colors cursor-pointer"
           >
-            💬 Send on WhatsApp
+            <span aria-hidden="true">💬</span> Send on WhatsApp
           </button>
           {fallbackUrl && (
             <a
