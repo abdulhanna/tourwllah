@@ -4,9 +4,10 @@ import PublicPackageCard from '@/components/packages/PublicPackageCard'
 import QuoteButton from '@/components/packages/QuoteButton'
 
 export const metadata = {
-  title: 'Tour Packages | Kashmir, Manali, Rajasthan & North East — Tripcart Holidays',
+  title: { absolute: 'Tour Packages | Kashmir, Manali, Rajasthan & North East — Tripcart Holidays' },
   description:
     'Browse handcrafted Kashmir, Manali, Rajasthan and North East tour packages from Tripcart Holidays. Compare itineraries and get an instant quote on WhatsApp.',
+  keywords: ['tour packages India', 'Kashmir Manali Rajasthan North East tour', 'India holiday packages', 'WhatsApp travel booking', 'Tripcart Holidays'],
   alternates: { canonical: 'https://tripcartholidays.com/packages' },
   openGraph: {
     title: 'Tour Packages — Tripcart Holidays',
@@ -62,7 +63,7 @@ export default function PackagesCatalog() {
                 key={c.label}
                 className="bg-white/15 border border-white/25 text-sm px-4 py-1.5 rounded-full"
               >
-                {c.icon} {c.label}
+                <span aria-hidden="true">{c.icon}</span> {c.label}
               </span>
             ))}
             <QuoteButton className="sm:ml-auto bg-accent text-slate-900 font-bold text-sm px-6 py-2.5 rounded-full hover:brightness-95 transition cursor-pointer" />
@@ -72,6 +73,7 @@ export default function PackagesCatalog() {
 
       <section className="bg-slate-50 py-12">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <h2 className="sr-only">All Tour Packages</h2>
           <p className="text-slate-500 text-sm mb-6">
             {DEMO_PACKAGES.length} packages · all customisable
           </p>
@@ -93,7 +95,7 @@ export default function PackagesCatalog() {
             Tell us your dates &amp; budget — we&apos;ll craft a custom itinerary in minutes.
           </p>
           <QuoteButton className="bg-white text-green-700 font-bold px-8 py-4 rounded-full text-lg shadow-md hover:bg-green-50 transition cursor-pointer">
-            ✦ Get Free Quote
+            <span aria-hidden="true">✦</span> Get Free Quote
           </QuoteButton>
         </div>
       </section>
