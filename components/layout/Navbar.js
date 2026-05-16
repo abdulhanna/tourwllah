@@ -61,12 +61,6 @@ export default function Navbar() {
 
         {/* CTA + mobile menu */}
         <div className="flex items-center gap-3">
-          <Link
-            href="/create-package"
-            className="hidden sm:inline-flex items-center gap-1.5 bg-brand text-white px-4 py-2 rounded-lg text-sm font-semibold hover:bg-brand-dark transition-colors"
-          >
-            + Create Package
-          </Link>
           <button
             className="lg:hidden p-2 rounded-md text-slate-600 hover:bg-slate-100"
             onClick={() => setMenuOpen(!menuOpen)}
@@ -100,15 +94,6 @@ export default function Navbar() {
                 </Link>
               </li>
             ))}
-            <li>
-              <Link
-                href="/create-package"
-                className="block px-3 py-2.5 text-sm font-semibold text-brand border border-brand rounded-md mt-2 text-center hover:bg-teal-50 transition-all"
-                onClick={() => setMenuOpen(false)}
-              >
-                + Create Package
-              </Link>
-            </li>
           </ul>
         </div>
       )}

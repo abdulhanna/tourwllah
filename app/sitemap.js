@@ -53,7 +53,7 @@ export default function sitemap() {
       ],
     },
     { url: `${BASE}/blog`, lastModified: new Date(), changeFrequency: 'weekly', priority: 0.8 },
-    { url: `${BASE}/packages`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.5 },
+    { url: `${BASE}/packages`, lastModified: new Date(), changeFrequency: 'weekly', priority: 0.8 },
   ]
 
   const blogRoutes = BLOGS.map(b => ({

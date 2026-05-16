@@ -30,18 +30,15 @@ function PackageFormInner() {
   const searchParams = useSearchParams()
   const editId = searchParams.get('id')
 
-  const [form, setForm] = useState(EMPTY_PKG)
-  const [mounted, setMounted] = useState(false)
+  const [form, setForm] = useState(null)
   const [saving, setSaving] = useState(false)
 
   useEffect(() => {
-    setMounted(true)
-    if (editId) {
-      const existing = getPackageById(editId)
-      if (existing) setForm(existing)
-    } else {
-      setForm({ ...EMPTY_PKG, id: `pkg-${Date.now()}` })
-    }
+    const existing = editId ? getPackageById(editId) : null
+    // Client-only localStorage read on mount / editId change; the null-sentinel
+    // + loading guard below prevents a hydration mismatch. Intentional.
+    // eslint-disable-next-line react-hooks/set-state-in-effect
+    setForm(existing || { ...EMPTY_PKG, id: `pkg-${Date.now()}` })
   }, [editId])
 
   const set = (field, value) => setForm(f => ({ ...f, [field]: value }))
@@ -54,10 +51,10 @@ function PackageFormInner() {
     }
     setSaving(true)
     savePackage(form)
-    router.push('/packages')
+    router.push('/admin')
   }
 
-  if (!mounted) return <div className="min-h-[60vh] flex items-center justify-center"><div className="text-brand text-4xl animate-pulse">🏔</div></div>
+  if (!form) return <div className="min-h-[60vh] flex items-center justify-center"><div className="text-brand text-4xl animate-pulse">🏔</div></div>
 
   return (
     <form onSubmit={handleSubmit}>

@@ -12,9 +12,8 @@ const destinations = [
 
 const quickLinks = [
   { label: 'Home', href: '/' },
-  { label: 'My Packages', href: '/packages' },
+  { label: 'Tour Packages', href: '/packages' },
   { label: 'Travel Blog', href: '/blog' },
-  { label: 'Create Package', href: '/create-package' },
 ]
 
 const blogLinks = [

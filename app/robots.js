@@ -4,7 +4,7 @@ export default function robots() {
       {
         userAgent: '*',
         allow: '/',
-        disallow: ['/create-package', '/api/'],
+        disallow: ['/admin', '/create-package', '/api/'],
       },
     ],
     sitemap: 'https://tripcartholidays.com/sitemap.xml',

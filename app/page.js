@@ -159,7 +159,7 @@ export default function Home() {
               href="/packages"
               className="inline-flex items-center gap-2 border-2 border-brand text-brand px-6 py-3 rounded-lg font-semibold text-sm hover:bg-brand hover:text-white transition-all"
             >
-              View All My Packages →
+              View All Packages →
             </Link>
           </div>
         </div>

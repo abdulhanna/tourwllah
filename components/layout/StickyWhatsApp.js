@@ -5,7 +5,7 @@ import { usePathname } from 'next/navigation'
 
 export default function StickyWhatsApp() {
   const pathname = usePathname()
-  if (pathname === '/create-package') return null
+  if (pathname === '/create-package' || pathname === '/admin') return null
 
   return (
     <button
