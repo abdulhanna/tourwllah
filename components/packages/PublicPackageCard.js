@@ -21,7 +21,7 @@ export default function PublicPackageCard({ pkg, dest }) {
         )}
         <div className="absolute inset-0 bg-gradient-to-t from-black/55 to-transparent" />
         <span className="absolute top-4 right-4 bg-white/20 backdrop-blur-sm text-white text-xs font-bold px-3 py-1 rounded-full border border-white/20">
-          🗓 {pkg.duration}
+          <span aria-hidden="true">🗓</span> {pkg.duration}
         </span>
         <span className="absolute bottom-4 left-4 text-white font-display font-bold text-lg drop-shadow">
           {pkg.destination}
@@ -32,11 +32,11 @@ export default function PublicPackageCard({ pkg, dest }) {
           <h3 className="font-display font-bold text-slate-900 text-lg leading-snug">{pkg.title}</h3>
           {pkg.price && <span className="text-accent font-bold text-sm flex-shrink-0">{pkg.price}</span>}
         </div>
-        <p className="text-slate-500 text-sm mb-4">📍 {pkg.destination}</p>
+        <p className="text-slate-500 text-sm mb-4"><span aria-hidden="true">📍</span> {pkg.destination}</p>
         <ul className="space-y-1 mb-5 flex-1">
-          {pkg.highlights.slice(0, 3).map((h, i) => (
-            <li key={i} className="text-xs text-slate-600 flex items-center gap-1.5">
-              <span className="text-brand">✔</span> {h}
+          {pkg.highlights.slice(0, 3).map((h) => (
+            <li key={h} className="text-xs text-slate-600 flex items-center gap-1.5">
+              <span className="text-brand" aria-hidden="true">✔</span> {h}
             </li>
           ))}
         </ul>
