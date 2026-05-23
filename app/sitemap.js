@@ -1,6 +1,7 @@
 import { BLOGS } from '@/data/blogs'
 import { DESTINATIONS } from '@/data/destinations'
 import { TREKS } from '@/data/treks'
+import { LEH_PACKAGES } from '@/data/leh-packages'
 
 const BASE = 'https://tripcartholidays.com'
 
@@ -62,7 +63,22 @@ export default function sitemap() {
       priority: 0.85,
       images: [{ url: TREKS[0].heroImage, title: 'Himalayan Treks — Tripcart Holidays' }],
     },
+    {
+      url: `${BASE}/leh-ladakh`,
+      lastModified: new Date(),
+      changeFrequency: 'weekly',
+      priority: 0.9,
+      images: [{ url: LEH_PACKAGES[0].heroImage, title: 'Leh Ladakh Packages — Tripcart Holidays' }],
+    },
   ]
+
+  const lehRoutes = LEH_PACKAGES.map(p => ({
+    url: `${BASE}/leh-ladakh/${p.slug}`,
+    lastModified: new Date(),
+    changeFrequency: 'weekly',
+    priority: 0.88,
+    images: [{ url: p.heroImage, title: p.title }],
+  }))
 
   const trekRoutes = TREKS.map(t => ({
     url: `${BASE}/treks/${t.slug}`,
@@ -80,5 +96,5 @@ export default function sitemap() {
     images: [{ url: b.heroImage, title: b.title }],
   }))
 
-  return [...staticRoutes, ...trekRoutes, ...blogRoutes]
+  return [...staticRoutes, ...trekRoutes, ...lehRoutes, ...blogRoutes]
 }

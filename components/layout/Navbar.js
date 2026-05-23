@@ -8,6 +8,7 @@ const navLinks = [
   { label: 'Home', href: '/' },
   { label: 'Packages', href: '/packages' },
   { label: 'Treks', href: '/treks' },
+  { label: 'Leh Ladakh', href: '/leh-ladakh' },
   { label: 'Blog', href: '/blog' },
   { label: 'Kashmir', href: '/kashmir-tour-package' },
   { label: 'Manali', href: '/manali-tour-package' },

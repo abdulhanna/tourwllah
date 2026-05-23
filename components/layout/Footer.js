@@ -16,6 +16,7 @@ const quickLinks = [
   { label: 'Home', href: '/' },
   { label: 'Tour Packages', href: '/packages' },
   { label: 'Himalayan Treks', href: '/treks' },
+  { label: 'Leh Ladakh', href: '/leh-ladakh' },
   { label: 'Travel Blog', href: '/blog' },
 ]
 

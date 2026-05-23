@@ -4,8 +4,10 @@ import { DEMO_PACKAGES } from '@/data/packages'
 import { BLOGS } from '@/data/blogs'
 import { DESTINATIONS } from '@/data/destinations'
 import { TREKS } from '@/data/treks'
+import { LEH_PACKAGES } from '@/data/leh-packages'
 import BlogCard from '@/components/blog/BlogCard'
 import TrekCard from '@/components/treks/TrekCard'
+import LehPackageCard from '@/components/leh/LehPackageCard'
 import WhatsAppCTA from '@/components/landing/WhatsAppCTA'
 
 export const metadata = {
@@ -190,6 +192,34 @@ export default function Home() {
               className="inline-flex items-center gap-2 border-2 border-brand text-brand px-6 py-3 rounded-lg font-semibold text-sm hover:bg-brand hover:text-white transition-all"
             >
               View All Treks →
+            </Link>
+          </div>
+        </div>
+      </section>
+
+      {/* Leh Ladakh */}
+      <section className="py-20 bg-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-12">
+            <p className="text-brand font-semibold text-sm uppercase tracking-wider mb-2">Ladakh Adventures</p>
+            <h2 className="font-display text-3xl sm:text-4xl font-bold text-slate-900 mb-4">
+              Leh Ladakh Packages
+            </h2>
+            <p className="text-slate-500 max-w-xl mx-auto">
+              Private tours &amp; group bike trips — 5N/6D to 7N/8D with Nubra, Pangong, Turtuk &amp; Umling La
+            </p>
+          </div>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+            {LEH_PACKAGES.map(pkg => (
+              <LehPackageCard key={pkg.id} pkg={pkg} />
+            ))}
+          </div>
+          <div className="text-center mt-10">
+            <Link
+              href="/leh-ladakh"
+              className="inline-flex items-center gap-2 border-2 border-brand text-brand px-6 py-3 rounded-lg font-semibold text-sm hover:bg-brand hover:text-white transition-all"
+            >
+              Compare All Leh Options →
             </Link>
           </div>
         </div>
