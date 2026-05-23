@@ -4,7 +4,6 @@ import Navbar from '@/components/layout/Navbar'
 import Footer from '@/components/layout/Footer'
 import StickyWhatsApp from '@/components/layout/StickyWhatsApp'
 import { INSTAGRAM_URL } from '@/lib/social'
-import { SITE_LOGO } from '@/lib/brand'
 
 const playfair = Playfair_Display({
   variable: '--font-playfair',
@@ -110,7 +109,7 @@ const organizationSchema = {
   email: 'info@tripcartholidays.com',
   address: { '@type': 'PostalAddress', addressCountry: 'IN' },
   sameAs: ['https://wa.me/917004015511', INSTAGRAM_URL],
-  logo: { '@type': 'ImageObject', url: `https://tripcartholidays.com${SITE_LOGO}` },
+  logo: { '@type': 'ImageObject', url: 'https://tripcartholidays.com/logo.png' },
   aggregateRating: { '@type': 'AggregateRating', ratingValue: '4.9', bestRating: '5', reviewCount: '1900' },
 }
 

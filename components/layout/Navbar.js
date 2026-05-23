@@ -3,7 +3,6 @@
 import { useState, useEffect } from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
-import { SITE_LOGO, SITE_LOGO_HEIGHT, SITE_LOGO_WIDTH } from '@/lib/brand'
 
 const navLinks = [
   { label: 'Home', href: '/' },
@@ -35,16 +34,16 @@ export default function Navbar() {
     >
       <nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between h-20 sm:h-24">
         {/* Logo */}
-        <Link href="/" aria-label="Tripcart Holidays — home" className="flex shrink-0 items-center py-1">
+        <Link href="/" aria-label="Tripcart Holidays — home" className="flex items-center group">
           <Image
-            src={SITE_LOGO}
+            src="/logo.png"
             alt="Tripcart Holidays"
-            width={SITE_LOGO_WIDTH}
-            height={SITE_LOGO_HEIGHT}
+            width={688}
+            height={384}
             priority
             quality={100}
             unoptimized
-            className="h-[4.75rem] sm:h-[5.75rem] w-auto object-contain"
+            className="h-16 sm:h-20 w-auto object-contain"
           />
         </Link>
 
