@@ -7,6 +7,8 @@ import TrekPackingSection from '@/components/treks/TrekPackingSection'
 import TrekPoliciesSection from '@/components/treks/TrekPoliciesSection'
 import FAQSection from '@/components/landing/FAQSection'
 import WhatsAppCTA from '@/components/landing/WhatsAppCTA'
+import ItineraryPdfExportSection from '@/components/itinerary/ItineraryPdfExportSection'
+import { trekToPdfData } from '@/lib/itinerary-pdf-adapters'
 
 export async function generateStaticParams() {
   return TREKS.map(trek => ({ slug: trek.slug }))
@@ -99,6 +101,7 @@ export default async function TrekDetailPage({ params }) {
         subtitle="Landscapes, campsites and experiences on this route"
       />
       <TrekItinerarySection itinerary={trek.itinerary} />
+      <ItineraryPdfExportSection pdfData={trekToPdfData(trek)} />
 
       <section className="py-16 bg-white">
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">

@@ -1,7 +1,8 @@
 'use client'
 
 import { openWhatsApp } from '@/lib/whatsapp'
-import { downloadPackagePDF } from '@/lib/pdf'
+import { downloadItineraryPDF } from '@/lib/itinerary-pdf'
+import { packageToPdfData } from '@/lib/itinerary-pdf-adapters'
 import { useState } from 'react'
 
 export default function PackagePreview({ pkg }) {
@@ -11,9 +12,12 @@ export default function PackagePreview({ pkg }) {
   const isEmpty = !pkg.title && !pkg.destination
 
   const handlePDF = async () => {
+    if (!pkg.itinerary?.length) return
     setPdfLoading(true)
     try {
-      await downloadPackagePDF('package-preview-print', `${pkg.title || 'itinerary'}.pdf`)
+      await downloadItineraryPDF(packageToPdfData(pkg))
+    } catch (e) {
+      alert(e.message || 'Could not generate PDF')
     } finally {
       setPdfLoading(false)
     }

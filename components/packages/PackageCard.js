@@ -4,7 +4,8 @@ import Link from 'next/link'
 import Badge from '@/components/ui/Badge'
 import { openWhatsApp } from '@/lib/whatsapp'
 import { deletePackage, duplicatePackage } from '@/lib/storage'
-import { downloadPackagePDF } from '@/lib/pdf'
+import { downloadItineraryPDF } from '@/lib/itinerary-pdf'
+import { packageToPdfData } from '@/lib/itinerary-pdf-adapters'
 import { useState } from 'react'
 
 export default function PackageCard({ pkg, onRefresh }) {
@@ -24,16 +25,11 @@ export default function PackageCard({ pkg, onRefresh }) {
 
   const handlePDF = async () => {
     setPdfLoading(true)
-    const previewId = `preview-${pkg.id}`
-    const el = document.createElement('div')
-    el.id = previewId
-    el.style.cssText = 'position:fixed;left:-9999px;top:0;width:794px;background:#fff;padding:32px;font-family:sans-serif;'
-    el.innerHTML = buildPreviewHTML(pkg)
-    document.body.appendChild(el)
     try {
-      await downloadPackagePDF(previewId, `${pkg.title}.pdf`)
+      await downloadItineraryPDF(packageToPdfData(pkg))
+    } catch (e) {
+      alert(e.message || 'Could not generate PDF')
     } finally {
-      document.body.removeChild(el)
       setPdfLoading(false)
     }
   }
@@ -105,31 +101,4 @@ export default function PackageCard({ pkg, onRefresh }) {
       </div>
     </article>
   )
-}
-
-function buildPreviewHTML(pkg) {
-  const inclusions = (pkg.inclusions || []).map(i => `<li style="margin:4px 0">✅ ${i}</li>`).join('')
-  const exclusions = (pkg.exclusions || []).map(e => `<li style="margin:4px 0">❌ ${e}</li>`).join('')
-  const itinerary = (pkg.itinerary || []).map(d => `
-    <div style="margin:12px 0;padding:12px;border-left:4px solid #0f766e;background:#f0faf9">
-      <strong>Day ${d.day}: ${d.title}</strong>
-      <p style="margin:4px 0;color:#555;font-size:13px">${d.description}</p>
-    </div>
-  `).join('')
-
-  return `
-    <div style="color:#0f172a;font-size:14px;line-height:1.6">
-      <div style="text-align:center;padding-bottom:20px;border-bottom:2px solid #0f766e;margin-bottom:20px">
-        <h1 style="font-size:24px;color:#0f766e;margin:0">🏔 Tripcart Holidays</h1>
-        <h2 style="font-size:18px;margin:8px 0 4px">${pkg.title}</h2>
-        <p style="color:#666;margin:0">${pkg.duration} · ${pkg.destination}</p>
-      </div>
-      ${itinerary}
-      <div style="margin-top:20px;display:grid;grid-template-columns:1fr 1fr;gap:16px">
-        <div><h3 style="color:#0f766e">Inclusions</h3><ul style="padding-left:0;list-style:none">${inclusions}</ul></div>
-        <div><h3 style="color:#e11d48">Exclusions</h3><ul style="padding-left:0;list-style:none">${exclusions}</ul></div>
-      </div>
-      ${pkg.notes ? `<div style="margin-top:16px;padding:12px;background:#fef9ee;border-radius:8px"><strong>📝 Notes:</strong> ${pkg.notes}</div>` : ''}
-    </div>
-  `
 }

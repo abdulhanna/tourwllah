@@ -5,6 +5,8 @@ import HighlightsSection from '@/components/landing/HighlightsSection'
 import ItineraryPreview from '@/components/landing/ItineraryPreview'
 import FAQSection from '@/components/landing/FAQSection'
 import WhatsAppCTA from '@/components/landing/WhatsAppCTA'
+import ItineraryPdfExportSection from '@/components/itinerary/ItineraryPdfExportSection'
+import { packageToPdfData } from '@/lib/itinerary-pdf-adapters'
 
 const dest = DESTINATIONS.find(d => d.slug === 'rajasthan')
 const pkg = DEMO_PACKAGES.find(p => p.id === 'rajasthan-001')
@@ -64,6 +66,7 @@ export default function RajasthanTourPackage() {
       <HeroSection destination={dest} pkg={pkg} />
       <HighlightsSection highlights={dest.highlights} destination="Rajasthan" />
       <ItineraryPreview itinerary={pkg.itinerary} />
+      <ItineraryPdfExportSection pdfData={packageToPdfData(pkg)} />
 
       {/* Inclusions / Exclusions */}
       <section className="py-16 bg-white">

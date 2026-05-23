@@ -7,6 +7,8 @@ import LehPricingSection from '@/components/leh/LehPricingSection'
 import TrekPoliciesSection from '@/components/treks/TrekPoliciesSection'
 import FAQSection from '@/components/landing/FAQSection'
 import WhatsAppCTA from '@/components/landing/WhatsAppCTA'
+import ItineraryPdfExportSection from '@/components/itinerary/ItineraryPdfExportSection'
+import { lehPackageToPdfData } from '@/lib/itinerary-pdf-adapters'
 
 export async function generateStaticParams() {
   return LEH_PACKAGES.map(pkg => ({ slug: pkg.slug }))
@@ -66,6 +68,7 @@ export default async function LehPackageDetailPage({ params }) {
         subtitle="Key experiences on this Leh Ladakh route"
       />
       <ItineraryPreview itinerary={pkg.itinerary} />
+      <ItineraryPdfExportSection pdfData={lehPackageToPdfData(pkg)} />
       <LehPricingSection pkg={pkg} />
 
       <section className="py-16 bg-white">
