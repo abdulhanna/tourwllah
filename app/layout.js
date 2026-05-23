@@ -3,6 +3,7 @@ import './globals.css'
 import Navbar from '@/components/layout/Navbar'
 import Footer from '@/components/layout/Footer'
 import StickyWhatsApp from '@/components/layout/StickyWhatsApp'
+import { INSTAGRAM_URL } from '@/lib/social'
 
 const playfair = Playfair_Display({
   variable: '--font-playfair',
@@ -35,6 +36,9 @@ export const metadata = {
     'customized holidays India',
     'WhatsApp travel booking',
     'best tour operator India',
+    'Hampta Pass trek',
+    'Chandratal Lake trek',
+    'Himachal trekking packages',
   ],
   authors: [{ name: 'Tripcart Holidays', url: 'https://tripcartholidays.com' }],
   creator: 'Tripcart Holidays',
@@ -97,7 +101,7 @@ const organizationSchema = {
   telephone: '+917004015511',
   email: 'info@tripcartholidays.com',
   address: { '@type': 'PostalAddress', addressCountry: 'IN' },
-  sameAs: ['https://wa.me/917004015511'],
+  sameAs: ['https://wa.me/917004015511', INSTAGRAM_URL],
   logo: { '@type': 'ImageObject', url: 'https://tripcartholidays.com/logo.png' },
   aggregateRating: { '@type': 'AggregateRating', ratingValue: '4.9', bestRating: '5', reviewCount: '1900' },
 }

@@ -3,7 +3,9 @@ import Link from 'next/link'
 import { DEMO_PACKAGES } from '@/data/packages'
 import { BLOGS } from '@/data/blogs'
 import { DESTINATIONS } from '@/data/destinations'
+import { TREKS } from '@/data/treks'
 import BlogCard from '@/components/blog/BlogCard'
+import TrekCard from '@/components/treks/TrekCard'
 import WhatsAppCTA from '@/components/landing/WhatsAppCTA'
 
 export const metadata = {
@@ -160,6 +162,34 @@ export default function Home() {
               className="inline-flex items-center gap-2 border-2 border-brand text-brand px-6 py-3 rounded-lg font-semibold text-sm hover:bg-brand hover:text-white transition-all"
             >
               View All Packages →
+            </Link>
+          </div>
+        </div>
+      </section>
+
+      {/* Treks */}
+      <section className="py-20 bg-slate-50">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-12">
+            <p className="text-brand font-semibold text-sm uppercase tracking-wider mb-2">Himalayan Adventures</p>
+            <h2 className="font-display text-3xl sm:text-4xl font-bold text-slate-900 mb-4">
+              Popular Treks
+            </h2>
+            <p className="text-slate-500 max-w-xl mx-auto">
+              Guided high-altitude treks with camping, meals and certified trek leaders
+            </p>
+          </div>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+            {TREKS.map(trek => (
+              <TrekCard key={trek.id} trek={trek} />
+            ))}
+          </div>
+          <div className="text-center mt-10">
+            <Link
+              href="/treks"
+              className="inline-flex items-center gap-2 border-2 border-brand text-brand px-6 py-3 rounded-lg font-semibold text-sm hover:bg-brand hover:text-white transition-all"
+            >
+              View All Treks →
             </Link>
           </div>
         </div>

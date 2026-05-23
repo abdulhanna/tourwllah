@@ -1,13 +1,18 @@
-export default function HighlightsSection({ highlights, destination }) {
+export default function HighlightsSection({
+  highlights,
+  destination,
+  title = 'Package Highlights',
+  subtitle,
+}) {
   return (
     <section className="py-16 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-10">
           <h2 className="font-display text-3xl sm:text-4xl font-bold text-slate-900 mb-3">
-            Package Highlights
+            {title}
           </h2>
           <p className="text-slate-500 max-w-xl mx-auto">
-            Everything included in your {destination} experience
+            {subtitle || `Everything included in your ${destination} experience`}
           </p>
         </div>
         <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-4">

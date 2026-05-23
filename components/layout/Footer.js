@@ -3,6 +3,8 @@
 import Image from 'next/image'
 import Link from 'next/link'
 import { openWhatsAppGeneral } from '@/lib/whatsapp'
+import { INSTAGRAM_URL } from '@/lib/social'
+import SocialLinks from '@/components/layout/SocialLinks'
 
 const destinations = [
   { label: 'Kashmir Tour Package', href: '/kashmir-tour-package' },
@@ -13,6 +15,7 @@ const destinations = [
 const quickLinks = [
   { label: 'Home', href: '/' },
   { label: 'Tour Packages', href: '/packages' },
+  { label: 'Himalayan Treks', href: '/treks' },
   { label: 'Travel Blog', href: '/blog' },
 ]
 
@@ -43,6 +46,7 @@ export default function Footer() {
             <p className="text-sm text-slate-400 leading-relaxed mb-5">
               Creating unforgettable travel experiences across the Indian Himalayas and beyond since 2014.
             </p>
+            <SocialLinks className="mb-4" />
             <button
               onClick={() => openWhatsAppGeneral()}
               className="inline-flex items-center gap-2 bg-green-500 text-white px-4 py-2.5 rounded-lg text-sm font-semibold hover:bg-green-600 transition-colors cursor-pointer"
@@ -95,6 +99,17 @@ export default function Footer() {
             <div className="space-y-1.5 text-sm text-slate-400">
               <p>📧 info@tripcartholidays.com</p>
               <p>📞 <a href="https://wa.me/917004015511" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">+91 70040 15511</a></p>
+              <p>
+                📷{' '}
+                <a
+                  href={INSTAGRAM_URL}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:text-white transition-colors"
+                >
+                  @tripcartholidays
+                </a>
+              </p>
             </div>
           </div>
         </div>

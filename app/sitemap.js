@@ -1,5 +1,6 @@
 import { BLOGS } from '@/data/blogs'
 import { DESTINATIONS } from '@/data/destinations'
+import { TREKS } from '@/data/treks'
 
 const BASE = 'https://tripcartholidays.com'
 
@@ -54,7 +55,22 @@ export default function sitemap() {
     },
     { url: `${BASE}/blog`, lastModified: new Date(), changeFrequency: 'weekly', priority: 0.8 },
     { url: `${BASE}/packages`, lastModified: new Date(), changeFrequency: 'weekly', priority: 0.8 },
+    {
+      url: `${BASE}/treks`,
+      lastModified: new Date(),
+      changeFrequency: 'weekly',
+      priority: 0.85,
+      images: [{ url: TREKS[0].heroImage, title: 'Himalayan Treks — Tripcart Holidays' }],
+    },
   ]
+
+  const trekRoutes = TREKS.map(t => ({
+    url: `${BASE}/treks/${t.slug}`,
+    lastModified: new Date(),
+    changeFrequency: 'weekly',
+    priority: 0.85,
+    images: [{ url: t.heroImage, title: t.title }],
+  }))
 
   const blogRoutes = BLOGS.map(b => ({
     url: `${BASE}/blog/${b.slug}`,
@@ -64,5 +80,5 @@ export default function sitemap() {
     images: [{ url: b.heroImage, title: b.title }],
   }))
 
-  return [...staticRoutes, ...blogRoutes]
+  return [...staticRoutes, ...trekRoutes, ...blogRoutes]
 }

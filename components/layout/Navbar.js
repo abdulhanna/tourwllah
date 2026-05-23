@@ -7,6 +7,7 @@ import Link from 'next/link'
 const navLinks = [
   { label: 'Home', href: '/' },
   { label: 'Packages', href: '/packages' },
+  { label: 'Treks', href: '/treks' },
   { label: 'Blog', href: '/blog' },
   { label: 'Kashmir', href: '/kashmir-tour-package' },
   { label: 'Manali', href: '/manali-tour-package' },
