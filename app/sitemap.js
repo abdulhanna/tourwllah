@@ -1,7 +1,7 @@
 import { BLOGS } from '@/data/blogs'
 import { DESTINATIONS } from '@/data/destinations'
 import { TREKS } from '@/data/treks'
-import { LEH_PACKAGES } from '@/data/leh-packages'
+import { LEH_PACKAGES, LEH_HEADER_IMAGE } from '@/data/leh-packages'
 
 const BASE = 'https://tripcartholidays.com'
 
@@ -68,7 +68,7 @@ export default function sitemap() {
       lastModified: new Date(),
       changeFrequency: 'weekly',
       priority: 0.9,
-      images: [{ url: LEH_PACKAGES[0].heroImage, title: 'Leh Ladakh Packages — Tripcart Holidays' }],
+      images: [{ url: `${BASE}${LEH_HEADER_IMAGE}`, title: 'Leh Ladakh Packages — Tripcart Holidays' }],
     },
   ]
 

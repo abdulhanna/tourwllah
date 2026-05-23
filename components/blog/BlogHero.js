@@ -23,6 +23,7 @@ export default function BlogHero({ blog }) {
 
       <div className="relative z-10 w-full max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 pb-14 pt-10">
         <Breadcrumb
+          variant="onDark"
           items={[
             { label: 'Home', href: '/' },
             { label: 'Blog', href: '/blog' },

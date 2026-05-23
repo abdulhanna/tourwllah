@@ -15,6 +15,7 @@ export default function LehHeroSection({ pkg }) {
       <div className="absolute inset-0 bg-gradient-to-t from-black/85 via-indigo-950/50 to-black/30" />
       <div className="relative z-10 w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-10 pb-14">
         <Breadcrumb
+          variant="onDark"
           items={[
             { label: 'Home', href: '/' },
             { label: 'Leh Ladakh', href: '/leh-ladakh' },

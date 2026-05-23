@@ -21,6 +21,7 @@ export default function TrekHeroSection({ trek }) {
 
       <div className="relative z-10 w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-10 pb-14">
         <Breadcrumb
+          variant="onDark"
           items={[
             { label: 'Home', href: '/' },
             { label: 'Treks', href: '/treks' },

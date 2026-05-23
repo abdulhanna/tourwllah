@@ -1,5 +1,11 @@
+import Image from 'next/image'
 import Link from 'next/link'
-import { LEH_PACKAGES, getLehPackagesByType, LEH_PACKAGE_TYPES } from '@/data/leh-packages'
+import {
+  LEH_PACKAGES,
+  LEH_HEADER_IMAGE,
+  getLehPackagesByType,
+  LEH_PACKAGE_TYPES,
+} from '@/data/leh-packages'
 import LehPackageCard from '@/components/leh/LehPackageCard'
 
 export const metadata = {
@@ -11,7 +17,7 @@ export const metadata = {
     title: 'Leh Ladakh Packages — Tripcart Holidays',
     description: 'Private promotional tours and Leh to Leh bike group trips with all duration options.',
     url: 'https://tripcartholidays.com/leh-ladakh',
-    images: [{ url: LEH_PACKAGES[0].heroImage, width: 1200, height: 630, alt: 'Leh Ladakh — Tripcart Holidays' }],
+    images: [{ url: LEH_HEADER_IMAGE, width: 1200, height: 630, alt: 'Leh Ladakh — Tripcart Holidays' }],
   },
 }
 
@@ -47,13 +53,25 @@ export default function LehLadakhPage() {
 
   return (
     <>
-      <section className="bg-gradient-to-br from-indigo-950 via-slate-900 to-slate-800 text-white py-16">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <p className="text-indigo-200 font-semibold text-sm uppercase tracking-wider mb-3">
+      <section className="relative min-h-[420px] sm:min-h-[480px] text-white overflow-hidden flex items-end">
+        <Image
+          src={LEH_HEADER_IMAGE}
+          alt="Leh Ladakh — mountain landscapes"
+          fill
+          className="object-cover object-center"
+          priority
+          sizes="100vw"
+        />
+        <div className="absolute inset-0 bg-gradient-to-t from-black/85 via-black/45 to-black/25" />
+        <div className="absolute inset-0 bg-gradient-to-r from-indigo-950/40 to-transparent" />
+        <div className="relative z-10 w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-14 sm:py-16">
+          <p className="text-white/90 font-semibold text-sm uppercase tracking-wider mb-3">
             Ladakh Adventures
           </p>
-          <h1 className="font-display text-4xl sm:text-5xl font-bold mb-4">Leh Ladakh Packages</h1>
-          <p className="text-white/80 max-w-2xl text-lg leading-relaxed">
+          <h1 className="font-display text-4xl sm:text-5xl font-bold mb-4 drop-shadow-lg">
+            Leh Ladakh Packages
+          </h1>
+          <p className="text-white/85 max-w-2xl text-lg leading-relaxed">
             Choose from private promotional tours or group bike &amp; tempo trips — 5N/6D to 7N/8D
             with Nubra, Pangong, Turtuk and Umling La options.
           </p>

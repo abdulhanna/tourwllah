@@ -1,7 +1,10 @@
-const LEH_HERO =
-  'https://images.unsplash.com/photo-1589308077984-97848cfc168c?w=1600&q=80'
-const LEH_CARD =
-  'https://images.unsplash.com/photo-1626621341517-bbf3d9990a23?w=1200&q=80'
+export const LEH_HEADER_IMAGE = '/leh-laddak.jpg'
+
+export const LEH_CARD_IMAGES = [
+  '/leh-laddak1.avif',
+  '/leh-laddak-3.jpg',
+  '/Leh-Ladakh-Package-2.webp',
+]
 
 const SHARED_INCLUSIONS_PRIVATE = [
   'Stay at mentioned hotels / camps',
@@ -84,8 +87,8 @@ export const LEH_PACKAGES = [
       'Private Leh Ladakh 5N/6D — Khardung La, Nubra Valley, Pangong Lake, Chang La. Deluxe & Super Deluxe hotels, permits & private cab. WhatsApp quote.',
     heroHeading: 'Leh Ladakh Private Tour — 5N/6D',
     heroSubheading: 'Khardung La · Nubra sand dunes · Pangong Lake · private cab',
-    heroImage: LEH_HERO,
-    cardImage: LEH_CARD,
+    heroImage: LEH_CARD_IMAGES[0],
+    cardImage: LEH_CARD_IMAGES[0],
     ctaLabel: 'Book Private Leh Package on WhatsApp',
     highlights: [
       { icon: '🏔', label: 'Khardung La Pass' },
@@ -146,8 +149,8 @@ export const LEH_PACKAGES = [
       'Private Leh Ladakh 6N/7D with Turtuk village excursion — Nubra, Pangong, Khardung La, Balti heritage. Deluxe hotels & private transport. WhatsApp quote.',
     heroHeading: 'Leh Ladakh Private Tour — 6N/7D + Turtuk',
     heroSubheading: 'Full circuit plus Turtuk — India\'s last Balti village near the border',
-    heroImage: LEH_HERO,
-    cardImage: LEH_CARD,
+    heroImage: LEH_CARD_IMAGES[1],
+    cardImage: LEH_CARD_IMAGES[1],
     ctaLabel: 'Book 6N/7D Private Leh on WhatsApp',
     highlights: [
       { icon: '🏘', label: 'Turtuk Village & LOC' },
@@ -209,8 +212,8 @@ export const LEH_PACKAGES = [
       'Leh to Leh bike trip 5N/6D — Royal Enfield Himalayan, backup team, Nubra & Pangong. Group batches Apr–Oct. Tempo-only option available. WhatsApp to book.',
     heroHeading: 'Leh to Leh Bike Trip — 5N/6D',
     heroSubheading: 'Royal Enfield Himalayan · backup crew · group adventure',
-    heroImage: LEH_HERO,
-    cardImage: LEH_CARD,
+    heroImage: LEH_CARD_IMAGES[0],
+    cardImage: LEH_CARD_IMAGES[0],
     ctaLabel: 'Book Bike Trip on WhatsApp',
     highlights: [
       { icon: '🏍', label: 'Himalayan 411 CC' },
@@ -279,8 +282,8 @@ export const LEH_PACKAGES = [
       'Leh bike group trip 6N/7D with Turtuk excursion — Himalayan 411, Pangong, Nubra, backup crew. Fixed departures Apr–Oct. WhatsApp booking.',
     heroHeading: 'Leh Bike Trip with Turtuk — 6N/7D',
     heroSubheading: 'Group motorcycle tour · Turtuk border village · Pangong',
-    heroImage: LEH_HERO,
-    cardImage: LEH_CARD,
+    heroImage: LEH_CARD_IMAGES[1],
+    cardImage: LEH_CARD_IMAGES[1],
     ctaLabel: 'Book 6N/7D Bike Trip on WhatsApp',
     highlights: [
       { icon: '🏍', label: 'Himalayan 411 CC' },
@@ -349,8 +352,8 @@ export const LEH_PACKAGES = [
       'Ultimate Leh bike trip 7N/8D — Umling La Pass 19,024 ft, Hanle observatory, Pangong, Nubra. Group Himalayan 411 expedition. WhatsApp quote.',
     heroHeading: 'Leh Bike Trip — Umling La 7N/8D',
     heroSubheading: 'Pangong · Hanle stargazing · Umling La 19,024 ft',
-    heroImage: LEH_HERO,
-    cardImage: LEH_CARD,
+    heroImage: LEH_CARD_IMAGES[2],
+    cardImage: LEH_CARD_IMAGES[2],
     ctaLabel: 'Book Umling La Bike Trip on WhatsApp',
     highlights: [
       { icon: '🛣', label: 'Umling La 19,024 ft' },
