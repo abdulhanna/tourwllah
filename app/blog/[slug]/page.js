@@ -4,6 +4,7 @@ import { DEMO_PACKAGES } from '@/data/packages'
 import BlogHero from '@/components/blog/BlogHero'
 import FAQSection from '@/components/landing/FAQSection'
 import { notFound } from 'next/navigation'
+import { SITE_LOGO } from '@/lib/brand'
 import Link from 'next/link'
 
 export async function generateStaticParams() {
@@ -61,7 +62,7 @@ export default async function BlogDetail({ params }) {
       '@type': 'Organization',
       name: 'Tripcart Holidays',
       url: 'https://tripcartholidays.com',
-      logo: { '@type': 'ImageObject', url: 'https://tripcartholidays.com/logo.png' },
+      logo: { '@type': 'ImageObject', url: `https://tripcartholidays.com${SITE_LOGO}` },
     },
     mainEntityOfPage: {
       '@type': 'WebPage',
